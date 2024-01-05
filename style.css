@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+}
+
+/* navbaar css */
+
+.cantainer {
+    display: flex;
+}
+
+.left_navbaar {
+    position: relative;
+    height: 100vh;
+    width: 23vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+    padding-top: 1.8rem;
+    border: transparent;
+    border-right: 2px solid black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.my_name {
+    position: relative;
+    background-color: white;
+    padding: 0px 13px 7px 17px;
+    ;
+}
+
+.my_name h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-size: 1.6rem;
+    letter-spacing: 0.18rem;
+    background: linear-gradient(90deg, red, blue, orange, rgb(26, 132, 168), rgb(157, 23, 180));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: anime 20s linear infinite;
+    background-size: 300%;
+}
+
+@keyframes anime {
+    100% {
+        background-position: 400%;
+    }
+}
+
+.my_name h1 span {
+    font-size: 2.3rem;
+}
+
+.my_name::before {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-color: #ec1839;
+    z-index: -1;
+    bottom: -5px;
+    left: -5px;
+}
+
+.my_name::after {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-color: #ec1839;
+    z-index: -1;
+    top: -5px;
+    right: -5px;
+}
+
+.nav_item ul li {
+    list-style: none;
+    padding: 10px 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ec1839;
+}
+
+.nav_item ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav_item ul i {
+    padding: 0px 10px;
+}
+
+.changecolor {
+    color: orangered;
+    background-color: #ec1839;
+}
+
+/* main css */
+.main {
+    height: 100vh;
+    width: 77vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* home css start here  */
+
+#mainbody {
+    margin: 90px 25px 20px 25px;
+    width: 95%;
+    display: flex;
+    scroll-behavior: smooth;
+
+}
+
+.maintext {
+    height: 100vh;
+    width: 55%;
+    scroll-behavior: smooth;
+}
+
+.maintext h3 {
+    font-size: 1.3rem;
+    line-height: 3rem;
+}
+
+.maintext h3 span {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    font-size: 2.25rem;
+    letter-spacing: 0.18rem;
+    background: linear-gradient(90deg, red, blue, orange, rgb(26, 132, 168), rgb(157, 23, 180));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: anime 20s linear infinite;
+    background-size: 300%;
+}
+
+.maintext a {
+    padding: 0.6rem 1.5rem;
+    text-decoration: none;
+    border-radius: 0.6rem;
+    border: transparent;
+    background-color: #ec1839;
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    letter-spacing: 2px;
+    transition: all 0.6s;
+    display: inline-block;
+    position: relative;
+    top: 2.6rem;
+}
+
+.maintext a:hover {
+    transform: scale(1.04);
+}
+
+.maintext p {
+    padding-top: 1.5rem;
+}
+
+
+/* image css  */
+.mainimage {
+    height: 25rem;
+    width: 25vw;
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    animation: imageanni 2.4s infinite ease-in-out;
+}
+
+@keyframes imageanni {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-2.5rem);
+    }
+
+    100% {
+        transform: translateY(0);
+
+    }
+}
+
+.mainimage img {
+    height: 20.5rem;
+    width: 14rem;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: white 0px 0px 12px, red 0px 0px 12px;
+    filter: brightness(80%) contrast(105%) grayscale(20%);
+    margin: 45px 30px;
+}
+
+.mainimage::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-top: 10px solid #ec1839;
+    border-left: 10px solid #ec1839;
+    z-index: -1;
+    top: -9px;
+    left: -9px;
+}
+
+.mainimage::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 10px solid #ec1839;
+    border-right: 10px solid #ec1839;
+    bottom: -9px;
+    z-index: -1;
+    right: -9px;
+}
+
+/* project css start here  */
+#projects {
+    height: 500px;
+    width: 95%;
+    margin: 0px 1.3rem;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    position: relative;
+}
+
+#projects h2::before {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 4.5rem;
+    background-color: #ec1839;
+    top: 75px;
+}
+
+#projects h2::after {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 2.5rem;
+    background-color: blue;
+    top: 85px;
+    left: 0px;
+}
+
+.portfolio_project {
+    display: flex;
+    margin: 5rem 0 0 1rem;
+}
+
+.porfolio_img {
+    width: 50%;
+}
+
+.porfolio_img img {
+    width: 93%;
+    filter: contrast(110%);
+}
+
+.portfolio_about {
+    width: 50%;
+    padding-left: 20px;
+
+}
+
+.portfolio_about h1 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.portfolio_about h1::after {
+    position: absolute;
+    content: "";
+    height: 7px;
+    width: 50px;
+    background-color: #ec1839;
+    bottom: -5px;
+    right: 10rem;
+    border-radius: 10px;
+}
+
+.portfolio_a {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.portfolio_about a {
+    text-align: center;
+    text-decoration: none;
+    background-color: #ec1839;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: white;
+    transition:all 0.5s linear;
+    
+}
+.portfolio_about a:hover{
+    transform: scale(1.04);
+}
+.aboutme_section{
+    margin: 1.8rem 1.3rem  0 1.3rem ;
+
+}
+.aboutme_heading h2{
+    font-size: 3rem;
+    position: relative;
+}
+.aboutme_heading h2::before{
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 4.5rem;
+    background-color: #ec1839;
+    top: 72px;
+}
+.aboutme_heading h2::after{
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 2.5rem;
+    background-color: blue;
+    top: 81px;
+    left: 0px;   
+}
+.about_me{
+    margin-top: 2.2rem;
+    font-size: 1.4rem;
+}
+.aboutpara{
+    margin-top: 1rem;
+}
