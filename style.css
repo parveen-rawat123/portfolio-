@@ -89,7 +89,6 @@ body {
     padding: 10px 5px;
     font-weight: 600;
     font-size: 1rem;
-    color: #ec1839;
 }
 
 .nav_item ul li a {
@@ -101,9 +100,8 @@ body {
     padding: 0px 10px;
 }
 
-.changecolor {
+.changecolor{
     color: orangered;
-    background-color: #ec1839;
 }
 
 /* main css */
@@ -318,9 +316,9 @@ body {
 .portfolio_about a:hover{
     transform: scale(1.04);
 }
-.aboutme_section{
-    margin: 1.8rem 1.3rem  0 1.3rem ;
 
+#aboutme_section{
+    margin: 1.8rem 1.3rem  0 1.3rem ;
 }
 .aboutme_heading h2{
     font-size: 3rem;
@@ -349,4 +347,9 @@ body {
 }
 .aboutpara{
     margin-top: 1rem;
+}
+
+.deatails{
+    margin: 0px 1.3rem;
+    background-color: #ec1839;
 }

@@ -1,13 +1,11 @@
 let li = document.querySelectorAll('.the_ul li')
+let a = document.querySelectorAll('.the_ul li a')
 for (const newli of li) {
    newli.addEventListener('click',()=>{
-      console.log(newli)
-   let news = newli.firstElementChild;
-    news.classList.toggle('changecolor');
-    news.classList.remove('changecolor');
-   // news.style.color = "red";
-   //  news.classList.toggle('changecolor') 
-   //  news.classList.remove('changecolor') 
+            if(a.classList.contains('change')){
+              newli.classList.add('change20')
+            }
+
    })
 }
 
