@@ -14,13 +14,12 @@ body {
 
 /* navbaar css */
 
-.cantainer {
+.container {
     display: flex;
 }
 
 .left_navbaar {
     position: relative;
-    height: 100vh;
     width: 23vw;
     display: flex;
     flex-direction: column;
@@ -29,14 +28,12 @@ body {
     padding-top: 1.8rem;
     border: transparent;
     border-right: 2px solid black;
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 .my_name {
     position: relative;
     background-color: white;
-    padding: 0px 13px 7px 17px;
+    padding: 0px 0.813rem  0.438rem 1.063rem;
     ;
 }
 
@@ -65,8 +62,8 @@ body {
 .my_name::before {
     position: absolute;
     content: "";
-    width: 21px;
-    height: 21px;
+    width: 1.313rem;
+    height: 1.313rem;
     background-color: #ec1839;
     z-index: -1;
     bottom: -5px;
@@ -76,8 +73,8 @@ body {
 .my_name::after {
     position: absolute;
     content: "";
-    width: 21px;
-    height: 21px;
+    width: 1.313rem;
+    height: 1.313rem;
     background-color: #ec1839;
     z-index: -1;
     top: -5px;
@@ -115,7 +112,7 @@ body {
 /* home css start here  */
 
 #mainbody {
-    margin: 90px 25px 20px 25px;
+    margin: 5.625rem  1.563rem 1.25rem 1.563rem;
     width: 95%;
     display: flex;
     scroll-behavior: smooth;
@@ -126,6 +123,7 @@ body {
     height: 100vh;
     width: 55%;
     scroll-behavior: smooth;
+    flex-shrink: 2;
 }
 
 .maintext h3 {
@@ -153,7 +151,7 @@ body {
     background-color: #ec1839;
     color: white;
     font-size: 1rem;
-    margin-left: 10px;
+    margin-left: 0.625rem;
     letter-spacing: 2px;
     transition: all 0.6s;
     display: inline-block;
@@ -198,18 +196,18 @@ body {
 .mainimage img {
     height: 20.5rem;
     width: 14rem;
-    border-radius: 8px;
+    border-radius: 0.5rem;
     object-fit: cover;
     box-shadow: white 0px 0px 12px, red 0px 0px 12px;
     filter: brightness(80%) contrast(105%) grayscale(20%);
-    margin: 45px 30px;
+    margin: 2.813rem  1.875rem;
 }
 
 .mainimage::before {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-top: 10px solid #ec1839;
     border-left: 10px solid #ec1839;
     z-index: -1;
@@ -220,8 +218,8 @@ body {
 .mainimage::after {
     content: "";
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 5rem;
+    height: 5rem;
     border-bottom: 10px solid #ec1839;
     border-right: 10px solid #ec1839;
     bottom: -9px;
@@ -231,7 +229,6 @@ body {
 
 /* project css start here  */
 #projects {
-    height: 500px;
     width: 95%;
     margin: 0px 1.3rem;
 }
@@ -247,7 +244,7 @@ body {
     height: 0.24rem;
     width: 4.5rem;
     background-color: #ec1839;
-    top: 75px;
+    top: 4.688rem;
 }
 
 #projects h2::after {
@@ -256,7 +253,7 @@ body {
     height: 0.24rem;
     width: 2.5rem;
     background-color: blue;
-    top: 85px;
+    top: 5.313rem;
     left: 0px;
 }
 
@@ -276,31 +273,31 @@ body {
 
 .portfolio_about {
     width: 50%;
-    padding-left: 20px;
+    padding-left: 1.25rem;
 
 }
 
 .portfolio_about h1 {
     text-align: center;
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .portfolio_about h1::after {
     position: absolute;
     content: "";
-    height: 7px;
-    width: 50px;
+    height: 0.438rem;
+    width: 3.125rem;
     background-color: #ec1839;
     bottom: -5px;
     right: 10rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .portfolio_a {
     display: flex;
     justify-content: space-around;
-    margin-top: 20px;
+    margin-top: 1.25rem
 }
 
 .portfolio_about a {
@@ -330,7 +327,7 @@ body {
     height: 0.24rem;
     width: 4.5rem;
     background-color: #ec1839;
-    top: 72px;
+    top: 4.5rem;
 }
 .aboutme_heading h2::after{
     content: "";
@@ -338,7 +335,7 @@ body {
     height: 0.24rem;
     width: 2.5rem;
     background-color: blue;
-    top: 81px;
+    top: 5.063rem;
     left: 0px;   
 }
 .about_me{

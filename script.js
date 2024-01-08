@@ -1,13 +1,16 @@
 let li = document.querySelectorAll('.the_ul li')
 let a = document.querySelectorAll('.the_ul li a')
-for (const newli of li) {
-   newli.addEventListener('click',()=>{
-            if(a.classList.contains('change')){
-              newli.classList.add('change20')
-            }
-
+li.forEach(element => {
+   element.addEventListener('click',()=>{
+     
+a.forEach(element => {
+  element.style.color = "red"; 
+  });
+a.forEach(element => {
+  element.style.color = "black"; 
+  });
    })
-}
+});
 
 document.addEventListener('DOMContentLoaded', function(){
    var typed = new Typed(".auto_typed", {
