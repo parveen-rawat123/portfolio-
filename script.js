@@ -1,14 +1,14 @@
-let listitem = document.querySelector('.list')
-let navvaar = document.querySelector('.navbaar .one');
-// listitem.forEach(element => {
-//    element.addEventListener("click",()=>{
-//       listitem.classlist.toggle('active')
-//    })
-// });
-listitem.addEventListener("click",()=>{
-   navvaar.style.color= "red" 
-   navvaar.style.backgroundColor= "red" 
-})
+// let listitem = document.querySelector('.list')
+// let navvaar = document.querySelector('.navbaar .one');
+// // listitem.forEach(element => {
+// //    element.addEventListener("click",()=>{
+// //       listitem.classlist.toggle('active')
+// //    })
+// // });
+// listitem.addEventListener("click",()=>{
+//    navvaar.style.color= "red" 
+//    navvaar.style.backgroundColor= "red" 
+// })
 
 
  
@@ -32,10 +32,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
     document.getElementById('mobile-menu').addEventListener('click', function () {
-  var navbar = document.querySelector('.nav_item');
+  let navbar = document.querySelector('.nav_item');
+  let li = document.querySelectorAll('.the ul li')
   if (navbar.style.display === 'block') {
     navbar.style.display = 'none';
+    
   } else {
     navbar.style.display = 'block';
   }
+//   for (const theli of li) {
+//    theli.addEventListener(click,()=>{
+//       navbar.style.display = "none"
+//    })
+//   }
 });

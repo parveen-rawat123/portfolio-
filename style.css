@@ -33,7 +33,7 @@ body {
 .my_name {
     position: relative;
     background-color: white;
-    padding: 0px 0.813rem  0.438rem 1.063rem;
+    padding: 0px 0.813rem 0.438rem 1.063rem;
     ;
 }
 
@@ -98,7 +98,7 @@ body {
     padding: 0px 10px;
 }
 
-.changecolor{
+.changecolor {
     color: orangered;
 }
 
@@ -113,7 +113,7 @@ body {
 /* home css start here  */
 
 #mainbody {
-    margin: 5.625rem  1.563rem 1.25rem 1.563rem;
+    margin: 5.625rem 1.563rem 1.25rem 1.563rem;
     width: 95%;
     display: flex;
     scroll-behavior: smooth;
@@ -177,9 +177,9 @@ body {
     /* max-height: 50%; */
     /* width: 26vw; */
     /* flex: 0 0 40%;s */
-    
+
     /* max-width: 40%; */
-    background-color:aqua;
+    background-color: aqua;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -216,14 +216,14 @@ body {
 }
 
 .mainimage::before {
-    content: "";    
+    content: "";
     position: absolute;
     width: 4rem;
     height: 4rem;
     border-top: 8px solid #ec1839;
     border-left: 8px solid #ec1839;
     z-index: -1;
-    top:-5px;
+    top: -5px;
     left: -7px;
 }
 
@@ -233,7 +233,7 @@ body {
     width: 4rem;
     height: 4rem;
     border-bottom: 8px solid #ec1839;
-    border-right: 8px solid #ec1839;    
+    border-right: 8px solid #ec1839;
     bottom: -9px;
     z-index: -1;
     right: 0.01rem;
@@ -322,21 +322,24 @@ body {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
     color: white;
-    transition:all 0.5s linear;
-    
+    transition: all 0.5s linear;
+
 }
-.portfolio_about a:hover{
+
+.portfolio_about a:hover {
     transform: scale(1.04);
 }
 
-#aboutme_section{
-    margin: 1.8rem 1.3rem  0 1.3rem ;
+#aboutme_section {
+    margin: 1.8rem 1.3rem 0 1.3rem;
 }
-.aboutme_heading h2{
+
+.aboutme_heading h2 {
     font-size: 3rem;
     position: relative;
 }
-.aboutme_heading h2::before{
+
+.aboutme_heading h2::before {
     content: "";
     position: absolute;
     height: 0.24rem;
@@ -344,28 +347,32 @@ body {
     background-color: #ec1839;
     top: 4.5rem;
 }
-.aboutme_heading h2::after{
+
+.aboutme_heading h2::after {
     content: "";
     position: absolute;
     height: 0.24rem;
     width: 2.5rem;
     background-color: blue;
     top: 5.063rem;
-    left: 0px;   
+    left: 0px;
 }
-.about_me{
+
+.about_me {
     margin-top: 2.2rem;
     font-size: 1.4rem;
 }
-.aboutpara{
+
+.aboutpara {
     margin-top: 1rem;
 }
 
-.deatails{
+.deatails {
     margin: 0px 1.3rem;
     background-color: #ec1839;
 }
-.active{
+
+.active {
     color: #ec1839;
 }
 
@@ -394,53 +401,84 @@ body {
         display: flex;
     }
 } */
+
 @media only screen and (max-width: 480px) {
-/* phone */
 
-.menu-toggle {
-    display: block;
-    cursor: pointer;
-  }
-  
-  .menu-toggle span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin-bottom: 5px;
-    position: relative;
-    background: #333;
-  }
-  .container{
-    flex-direction: column;
-  }
-  .left_navbaar{
-width: 100%;
-background-color: bisque;
-  }
+    /* phone */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        top: 25px;
+        left: 20px;
+        z-index: 2;
+        width: 30px;
+    }
 
-.main{
-    width: 100%;
-}
-.left_navbaar {
-    gap: 3rem;
-    padding-top: 0;
-}
-.my_name{
-    margin-left: 1rem;
-}
-.nav_item{
-    display: none;
-}
-#mainbody{
-    flex-direction: column;
-}
-.maintext{
-    width: 100%;
-}
-.mainimage{
-    width: 100%;
-    height: 300px;
-}
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #333;
+        /* z-index: 1; */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+
+    .left_navbaar {
+        width: 100vw;
+        min-height: 80px;
+        /* height: 100%; */
+        /* top: -24px; */
+        border: none;
+        gap: 60px;
+        background-color: #ede0d4;
+        position: fixed;
+        z-index: 1;
+        padding: 0;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .nav_item {
+        display: none;
+        position: relative;
+        /* z-index: 1; */
+
+    }
+
+    .my_name {
+        background-color: #ede0d4;
+        position: relative;
+        top: 10px;
+    padding:0 0.1rem 0rem 1rem;
+
+        /* top: 30px; */
+    }
+
+    .my_name h1 {
+        font-size: 1.4rem;
+    }
+
+    #mainbody {
+        flex-direction: column;
+    }
+
+    .maintext {
+        width: 100%;
+    }
+
+    .mainimage {
+        height: 600px;
+        width: 700px;
+    }
 }
 
 
@@ -453,24 +491,15 @@ background-color: bisque;
 
 @media only screen and (min-width: 481px) and (max-width: 768px)
 /* tablet */
-{
-    
-
-}
+    {}
 
 
-@media only screen and (min-width: 769px) and (max-width: 
-/* mediam size device */
-1024px) {
+@media only screen and (min-width: 769px) and (max-width:
+    /* mediam size device */
+    1024px) {}
 
-
+@media only screen and (min-width: 1025px) {
+    /* desktop    */
 
 
 }
-
-@media only screen and (min-width: 1025px){
-/* desktop    */
-
-
-}
-
