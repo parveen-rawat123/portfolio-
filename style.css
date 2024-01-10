@@ -35,7 +35,7 @@ body {
     position: relative;
     background-color: white;
     padding: 0px 0.813rem 0.438rem 1.063rem;
-    
+
 }
 
 .my_name h1 {
@@ -383,7 +383,10 @@ body {
     .left_navbaar {
         max-width: 23vw;
     }
-
+    .mainimage {
+        max-height: 20rem;
+    }
+    
     .my_name {
         max-width: 90%;
         padding: 5px 15px 5px 20px;
@@ -400,7 +403,7 @@ body {
         flex-direction: column;
     }
 
-    .left_navbaar{
+    .left_navbaar {
         width: 100%;
         height: 15vh;
         flex-direction: row;
@@ -430,16 +433,18 @@ body {
     }
 }
 
-@media only screen and (max-width:830px){
-    .my_name{
-        width: 200px;
+@media only screen and (max-width:830px) {
+    .my_name {
         max-width: 100%;
     }
-    
+
+    .mainimage {
+        max-height: 20rem;
+    }
 }
 
-@media only screen and (max-width:768px){
-    .nav_item ul{
+@media only screen and (max-width:768px) {
+    .nav_item ul {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -450,9 +455,7 @@ body {
         padding: 50px 70px;
         background-color: antiquewhite;
     }
-     .nav_item ul li {
-       
-    }
+
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -470,10 +473,42 @@ body {
         background: #333;
     }
 
+    .mainimage {
+        max-height: 20rem;
+    }
 
 }
 
+@media only screen and (max-width:735px) {
 
+    .my_name {
+        max-width: 30rem;
+    }
+
+    .mainimage {
+        max-height: 18rem;
+    }
+
+
+}
+
+@media only screen and (max-width:700px) {
+    #mainbody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maintext {
+        width: 100%;
+    }
+
+    .mainimage {
+       max-height: 40rem;
+        max-width: 60%;
+      margin: auto;
+    }
+
+}
 
 
 

@@ -15,7 +15,7 @@
 
 document.addEventListener('DOMContentLoaded', function(){
    var typed = new Typed(".auto_typed", {
-      strings: ["WebDevloper","HTML", "Css", "JavaScript", "Bootstrap"],
+      strings: ["HTML", "Css", "JavaScript", "Bootstrap"],
       typeSpeed: 150,
       backSpeed: 50,
       loop: true
