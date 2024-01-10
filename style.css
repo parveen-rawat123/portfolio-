@@ -419,7 +419,6 @@ body {
 
     .nav_item ul {
         display: flex;
-        margin-bottom: 10px;
     }
 
     .nav_item ul li {
@@ -431,13 +430,10 @@ body {
     }
 }
 
-@media only screen and (max-width:840px){
-    .nav_item {
-        position: absolute;
-        right:3rem;
-    }
+@media only screen and (max-width:830px){
     .my_name{
         width: 200px;
+        max-width: 100%;
     }
     
 }
@@ -447,16 +443,24 @@ body {
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 1rem;
+        gap: 20px;
+        top: 3rem;
         right: 10px;
         z-index: 2;
-        padding: 40px;
+        padding: 50px 70px;
         background-color: antiquewhite;
     }
-    .menu-toggle {
-        cursor: pointer;
+     .nav_item ul li {
+       
     }
-    
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        right: 50px;
+        z-index: 2;
+    }
+
     .menu-toggle span {
         display: block;
         width: 25px;
@@ -465,7 +469,7 @@ body {
         position: relative;
         background: #333;
     }
-    
+
 
 }
 
@@ -515,78 +519,6 @@ body {
 
 
 
-
-
-/* phone */
-/* .menu-toggle {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        top: 25px;
-        left: 20px;
-        z-index: 2;
-        width: 30px;
-    }
-
-    .menu-toggle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin-bottom: 5px;
-        position: relative;
-        background: #333;
-    }
-
-    .container {
-        flex-direction: column;
-    }
-
-
-    .left_navbaar {
-        width: 100vw;
-        min-height: 80px;
-        border: none;
-        gap: 60px;
-        background-color: #ede0d4;
-        position: fixed;
-        z-index: 1;
-        padding: 0;
-    }
-
-    .main {
-        width: 100%;
-    }
-
-    .nav_item {
-        display: none;
-        position: relative;
-
-    }
-
-    .my_name {
-        background-color: #ede0d4;
-        position: relative;
-        top: 10px;
-    padding:0 0.1rem 0rem 1rem;
-
-   }
-
-    .my_name h1 {
-        font-size: 1.4rem;
-    }
-
-    #mainbody {
-        flex-direction: column;
-    }
-
-    .maintext {
-        width: 100%;
-    }
-
-    .mainimage {
-        height: 600px;
-        width: 700px;
-    } */
 @media only screen and (min-width: 481px) and (max-width: 768px)
 /* tablet */
     {}
