@@ -40,9 +40,11 @@ document.addEventListener('DOMContentLoaded', function(){
   } else {
     navbar.style.display = 'block';
   }
-//   for (const theli of li) {
-//    theli.addEventListener(click,()=>{
-//       navbar.style.display = "none"
-//    })
-//   }
+});
+
+const formelement = document.querySelectorAll('input')
+formelement.forEach(element => {
+   element.addEventListener("click",()=>{
+      element.style.border = "2px solid blue";
+   })
 });

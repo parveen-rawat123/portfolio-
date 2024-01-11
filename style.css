@@ -510,6 +510,45 @@ body {
 
 }
 
+/* from css here */
+.form{
+ height: 500px;
+ width: 95%;
+ background-color: bisque;
+ margin: 3rem 1.3rem 0 1.3rem;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.contacttext{
+    background-color: aqua;
+}
+.contectform{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.contectform input{
+       width: 16rem;
+       height: 38px;
+       margin-top: 15px;
+       background-color:#e9ecef;
+       border-radius: 5px;
+
+    }
+    .contectform textarea{
+        margin-top: 15px;
+        border-radius: 5px;
+        background-color:#e9ecef;
+
+}
+.contectform button{
+  margin-top: 15px;
+} 
+
+
 
 
 
