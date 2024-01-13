@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 const formelement = document.querySelectorAll('input')
 formelement.forEach(element => {
-   element.addEventListener("click",()=>{
-      element.style.border = "2px solid blue";
+   element.addEventListener("click",(e)=>{
+      e.target.classList.toggle('hello')
    })
 });

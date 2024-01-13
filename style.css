@@ -84,11 +84,16 @@ body {
 
 .nav_item ul li {
     list-style: none;
-    padding: 10px 5px;
+    padding: 7px 10px;
+    margin-top: 10px;
     font-weight: 600;
     font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.8s;
 }
-
+.nav_item ul li:hover{
+    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
+}
 .nav_item ul li a {
     text-decoration: none;
     color: black;
@@ -328,6 +333,7 @@ body {
 
 #aboutme_section {
     margin: 1.8rem 1.3rem 0 1.3rem;
+    background-color:aqua
 }
 
 .aboutme_heading h2 {
@@ -361,6 +367,7 @@ body {
 
 .aboutpara {
     margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 .deatails {
@@ -547,7 +554,9 @@ body {
 .contectform button{
   margin-top: 15px;
 } 
-
+.hello{
+    background-color: #ec1839;
+}
 
 
 
