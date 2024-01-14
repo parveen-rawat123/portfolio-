@@ -93,6 +93,7 @@ body {
 }
 .nav_item ul li:hover{
     box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
 }
 .nav_item ul li a {
     text-decoration: none;
@@ -333,7 +334,6 @@ body {
 
 #aboutme_section {
     margin: 1.8rem 1.3rem 0 1.3rem;
-    background-color:aqua
 }
 
 .aboutme_heading h2 {
@@ -371,11 +371,41 @@ body {
 }
 
 .deatails {
-    margin: 0px 1.3rem;
-    background-color: #ec1839;
+    margin: 2rem 1.3rem;
+    padding: 10px 0;
+    display: flex;
+    width: 95%;
 }
-
-
+.keyskill{
+    gap: 25px;
+ display: flex;
+    width: 57%;
+}
+.keyskill p{
+    color: #ec1839;
+    padding: 5px 2px;
+    border-radius: 5px;
+    transition: all 1s;
+    padding-left: 5px;
+}
+.keyskill p:hover{
+    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
+    transform: scale(1.02);
+}
+.keyskill span{
+   color: black;
+}
+.skills{
+    background-color: aquamarine;
+    width: 43%;
+}
+.firstskill{
+    display: grid;
+    gap: 30px;
+}
+.secondskill{
+    display: grid;
+}
 
 
 
