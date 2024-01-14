@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function(){
    });
 });
 
+// for responsive
 
     document.getElementById('mobile-menu').addEventListener('click', function () {
   let navbar = document.querySelector('.nav_item');
@@ -42,9 +43,21 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 });
 
-const formelement = document.querySelectorAll('input')
-formelement.forEach(element => {
-   element.addEventListener("click",(e)=>{
-      e.target.classList.toggle('hello')
-   })
+
+const formElements = document.querySelectorAll('.contectform input');
+let val = true;
+
+formElements.forEach(element => {
+  element.addEventListener('click', (e) => {
+    if (val) {
+      e.style.border=  "2px solid blue";
+      e.style.backgroundColor =  "blue";
+
+      val = false
+   }
+   else{
+      element.style.border=  "none";
+   }
+  });
 });
+

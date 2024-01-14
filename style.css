@@ -91,10 +91,12 @@ body {
     border-radius: 10px;
     transition: all 0.8s;
 }
-.nav_item ul li:hover{
+
+.nav_item ul li:hover {
     box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.02);
 }
+
 .nav_item ul li a {
     text-decoration: none;
     color: black;
@@ -376,37 +378,50 @@ body {
     display: flex;
     width: 95%;
 }
-.keyskill{
+
+.keyskill {
     gap: 25px;
- display: flex;
+    display: flex;
     width: 57%;
 }
-.keyskill p{
+
+.keyskill p {
     color: #ec1839;
     padding: 5px 2px;
     border-radius: 5px;
     transition: all 1s;
-    padding-left: 5px;
+    padding-left: 9px;
+    cursor: pointer;
 }
-.keyskill p:hover{
+
+.keyskill p:hover {
     box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
     transform: scale(1.02);
 }
-.keyskill span{
-   color: black;
+
+.keyskill span {
+    color: black;
 }
-.skills{
+
+.skills {
     background-color: aquamarine;
     width: 43%;
 }
-.firstskill{
+
+.firstskill {
     display: grid;
     gap: 30px;
 }
-.secondskill{
+
+.secondskill {
     display: grid;
 }
 
+.Brithday,
+.Role,
+.Degree {
+    width: 13rem;
+}
 
 
 @media only screen and (max-width: 1150px) {
@@ -420,10 +435,11 @@ body {
     .left_navbaar {
         max-width: 23vw;
     }
+
     .mainimage {
         max-height: 20rem;
     }
-    
+
     .my_name {
         max-width: 90%;
         padding: 5px 15px 5px 20px;
@@ -540,53 +556,60 @@ body {
     }
 
     .mainimage {
-       max-height: 40rem;
+        max-height: 40rem;
         max-width: 60%;
-      margin: auto;
+        margin: auto;
     }
 
 }
 
 /* from css here */
-.form{
- height: 500px;
- width: 95%;
- background-color: bisque;
- margin: 3rem 1.3rem 0 1.3rem;
- display: flex;
- align-items: center;
- justify-content: center;
+#form {
+    height: 500px;
+    width: 95%;
+    background-color: bisque;
+    margin: 3rem 1.3rem 0 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contacttext{
+.contacttext {
     background-color: aqua;
 }
-.contectform{
+
+.contectform {
     background-color: aquamarine;
+    padding: 20px;
+    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
+}
+.contectform form{
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    align-items: flex-start;
 }
-.contectform input{
-       width: 16rem;
-       height: 38px;
-       margin-top: 15px;
-       background-color:#e9ecef;
-       border-radius: 5px;
+.contectform input {
+    width: 16rem;
+    height: 38px;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    border: none;
+}
 
-    }
-    .contectform textarea{
-        margin-top: 15px;
-        border-radius: 5px;
-        background-color:#e9ecef;
+
+.contectform textarea {
+    border-radius: 5px;
+    background-color: #e9ecef;
 
 }
-.contectform button{
-  margin-top: 15px;
-} 
-.hello{
-    background-color: #ec1839;
+
+.contectform button {
+
 }
+
+
+
+
 
 
 
