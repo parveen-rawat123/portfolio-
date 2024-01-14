@@ -168,7 +168,7 @@ body {
     display: inline-block;
     position: relative;
     top: 2.6rem;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .maintext a:hover {
@@ -424,6 +424,126 @@ body {
 }
 
 
+/* from css here */
+#form {
+    height: 500px;
+    width: 95%;
+    margin: 3rem 1.3rem 0 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    border-radius: 10px;
+}
+
+.contacttext p{
+    font-size: 0.85rem;
+    color:darkslategray;
+
+}
+.mainto{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 5px;
+    transition: all 1s;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.mailicon i {
+    font-size: 1.5rem;
+    padding:  5px 10px;
+    background-color:rgba(128, 128, 128, 0.212);
+    border-radius: 5px;
+}
+.mailtext{
+    padding-left: 15px;
+}
+.mailtext a{
+    font-size: 0.94rem;
+}
+.contectform {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
+    background-color: #e9ecef;
+}
+.contectform h3{
+    padding-bottom: 15px;
+    font-weight: 600;
+}
+.contectform form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.contectform input {
+    width: 18rem;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+}
+.contectform input:focus{
+    border: 2px solid rgba(0, 0, 255, 0.432);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7); 
+}
+.contectform input::placeholder{
+    font-size: 0.9rem;
+    padding-left: 7px;
+}
+.contectform textarea::placeholder{
+    font-family: 'Roboto', sans-serif;
+    padding-left: 7px;
+}
+
+.contectform textarea:focus{
+    border: 2px solid rgba(0, 0, 255, 0.432);
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7); 
+
+}
+.contectform textarea {
+    border-radius: 5px;
+    background-color: white;
+
+}
+
+.contectform button {
+    position: relative;
+    left: 28%;
+    color: white;
+    font-size: 0.9rem;
+    padding:11px 10px;
+    border-radius: 7px;
+    border: none;
+    background-color:rgba(0, 0, 255, 0.856);
+    transition: all 2s;
+}
+.contectform button:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1150px) {
     .mainimage {
         max-height: 22rem;
@@ -562,69 +682,6 @@ body {
     }
 
 }
-
-/* from css here */
-#form {
-    height: 500px;
-    width: 95%;
-    background-color: bisque;
-    margin: 3rem 1.3rem 0 1.3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contacttext {
-    background-color: aqua;
-}
-
-.contectform {
-    background-color: aquamarine;
-    padding: 20px;
-    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
-}
-.contectform form{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-.contectform input {
-    width: 16rem;
-    height: 38px;
-    background-color: #e9ecef;
-    border-radius: 5px;
-    border: none;
-}
-
-
-.contectform textarea {
-    border-radius: 5px;
-    background-color: #e9ecef;
-
-}
-
-.contectform button {
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
