@@ -421,10 +421,37 @@ body {
 .Degree {
     width: 13rem;
 }
+
+.downlodecv a{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    left: 55px;
+    top: 20px;
+    background-color: #ec1839;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 8px;
+    z-index: 2;
+}
+
+.hireme a{
+    text-decoration: none;
+    text-align: center;
+    position: relative;
+    left: 55px;
+    top: 45px;
+    background-color: #ec1839;
+    padding: 10px 15px;
+    color: white;
+    border-radius: 8px;
+    z-index: 2;
+}
+
 .getintouch h2{
     font-size: 3rem;
     position: relative;
-    margin: 5rem 0  0 1.3rem;
+    margin: 7rem 0  0 1.3rem;
 }
 
 .getintouch h2::before {
