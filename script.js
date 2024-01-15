@@ -44,21 +44,21 @@ document.addEventListener('DOMContentLoaded', function(){
 });
 
 
-const formElements = document.querySelectorAll('.contectform input');
-let val = true;
+// const formElements = document.querySelectorAll('.contectform input');
+// let val = true;
 
-formElements.forEach(element => {
-  element.addEventListener('click', (e) => {
-    if (val) {
-      e.style.border=  "2px solid blue";
-      e.style.backgroundColor =  "blue";
+// formElements.forEach(element => {
+//   element.addEventListener('click', (e) => {
+//     if (val) {
+//       e.style.border=  "2px solid blue";
+//       e.style.backgroundColor =  "blue";
 
-      val = false
-   }
-   else{
-      element.style.border=  "none";
-   }
-  });
-});
+//       val = false
+//    }
+//    else{
+//       element.style.border=  "none";
+//    }
+//   });
+// });
 
 
