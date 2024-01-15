@@ -262,7 +262,7 @@ body {
     height: 0.24rem;
     width: 4.5rem;
     background-color: #ec1839;
-    top: 4.688rem;
+    top: 4.2rem;
 }
 
 #projects h2::after {
@@ -271,7 +271,7 @@ body {
     height: 0.24rem;
     width: 2.5rem;
     background-color: blue;
-    top: 5.313rem;
+    top: 4.65rem;
     left: 0px;
 }
 
@@ -348,7 +348,7 @@ body {
     height: 0.24rem;
     width: 4.5rem;
     background-color: #ec1839;
-    top: 4.5rem;
+    top: 3.8rem;
 }
 
 .aboutme_heading h2::after {
@@ -357,7 +357,7 @@ body {
     height: 0.24rem;
     width: 2.5rem;
     background-color: blue;
-    top: 5.063rem;
+    top: 4.2rem;
     left: 0px;
 }
 
@@ -421,13 +421,36 @@ body {
 .Degree {
     width: 13rem;
 }
+.getintouch h2{
+    font-size: 3rem;
+    position: relative;
+    margin: 5rem 0  0 1.3rem;
+}
 
+.getintouch h2::before {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 4.5rem;
+    background-color: #ec1839;
+    top: 3.8rem;
+}
+
+.getintouch h2::after {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 2.5rem;
+    background-color: blue;
+    top: 4.2rem;
+    left: 0px;
+}
 
 /* from css here */
 #form {
     height: 500px;
     width: 95%;
-    margin: 3rem 1.3rem 0 1.3rem;
+    margin: 1rem 1.3rem 0 1.3rem;
     display: flex;
     align-items: center;
     justify-content:space-around;
@@ -537,7 +560,7 @@ body {
 .footericon{
     display: flex;
     gap: 40px;
-    font-size: 40px;
+    font-size: 35px;
 }
 .footericon i{
     color: black;
