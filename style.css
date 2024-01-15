@@ -539,7 +539,7 @@ body {
     padding:11px 10px;
     border-radius: 7px;
     border: none;
-    background-color:rgba(0, 0, 255, 0.856);
+    background-color:#00a6fb;
     transition: all 2s;
 }
 .contectform button:hover{
@@ -568,17 +568,29 @@ body {
 }
 .footericon .fa-instagram:hover{
     color: rgba(255, 0, 0, 0.5);
+    transform: scale(1.1);
 }
 .footericon .fa-linkedin:hover{
     color: #0077B5;
+    transform: scale(1.1);
 }
 
 .footericon .fa-twitter:hover{
     color: #1DA1F2;
+    transform: scale(1.1);
 }
 
 .footericon .fa-github:hover{
     color:rgba(0, 0, 0, 0.767);
+    transform: scale(1.1);
+}
+.footericon .fa-discord:hover{
+    transform: scale(1.1);
+    color:  #7289da;
+}
+.footericon .fa-telegram:hover{
+    color: #0088cc;
+    transform: scale(1.1);
 }
 
 
