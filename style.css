@@ -414,11 +414,9 @@ body {
     height: auto;
     width: 90px;
     transition: all 0.8s;
-    background-color: #7289da;
 }
 .skills img:hover{
     transform: scale(1.05);
-    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 
 }
 .frontent{
@@ -428,16 +426,24 @@ body {
 .backend{
     display: flex;
     justify-content: space-evenly;
-    
+}
+.backend img:nth-child(2){
+    width: 40%;
 }
 .db{
     display: flex;
     justify-content: space-evenly;
 }
+.db img:nth-child(1){
+    width: 60%;
+}
 .other{
 display: flex;
 justify-content: space-evenly;
 
+}
+.other img:nth-child(1){
+    width: 30%;
 }
 .firstskill {
     display: grid;
