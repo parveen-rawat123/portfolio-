@@ -403,11 +403,42 @@ body {
     color: black;
 }
 
-.skills {
-    background-color: aquamarine;
+.skills{
+    display: flex;
     width: 43%;
+    flex-direction: column;
+    gap: 30px;
+    padding: 10px;
 }
+.skills img{
+    height: auto;
+    width: 90px;
+    transition: all 0.8s;
+    background-color: #7289da;
+}
+.skills img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
 
+}
+.frontent{
+    display: flex;
+    justify-content: space-evenly;
+}
+.backend{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.db{
+    display: flex;
+    justify-content: space-evenly;
+}
+.other{
+display: flex;
+justify-content: space-evenly;
+
+}
 .firstskill {
     display: grid;
     gap: 30px;
@@ -440,8 +471,8 @@ body {
     text-decoration: none;
     text-align: center;
     position: relative;
-    left: 55px;
-    top: 50px;
+    left: 20px;
+    top: 34px;
     background-color: #ec1839;
     padding: 10px 15px;
     color: white;
