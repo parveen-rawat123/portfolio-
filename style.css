@@ -452,8 +452,13 @@ justify-content: space-evenly;
 
 .secondskill {
     display: grid;
+    border-right: 2px solid black;
+    padding-left: 10px;
 }
-
+.red{
+    background-color: #00a6fb;
+    height: 100px;
+}
 .Brithday,
 .Role,
 .Degree {
@@ -465,7 +470,7 @@ justify-content: space-evenly;
     text-align: center;
     position: relative;
     left: 55px;
-    top: 20px;
+    top: 2px;
     background-color: #ec1839;
     padding: 10px 10px;
     color: white;
@@ -633,7 +638,7 @@ justify-content: space-evenly;
 }
 .footericon .fa-instagram:hover{
     color: rgba(255, 0, 0, 0.5);
-    transform: scale(1.1);
+    transform: rotateX('120');
 }
 .footericon .fa-linkedin:hover{
     color: #0077B5;
