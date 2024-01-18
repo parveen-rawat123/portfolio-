@@ -835,6 +835,15 @@ justify-content: space-evenly;
 }
 
 
+    .active a{
+        color: orangered; 
+      }
+  
+    .active i {
+        color: orangered; 
+      }
+  
+
 
 
 

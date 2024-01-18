@@ -1,17 +1,15 @@
-// let listitem = document.querySelector('.list')
-// let navvaar = document.querySelector('.navbaar .one');
-// // listitem.forEach(element => {
-// //    element.addEventListener("click",()=>{
-// //       listitem.classlist.toggle('active')
-// //    })
-// // });
-// listitem.addEventListener("click",()=>{
-//    navvaar.style.color= "red" 
-//    navvaar.style.backgroundColor= "red" 
-// })
-
-
+document.querySelector('.the_ul').addEventListener('click', function(event) {
+   if (event.target.tagName === 'A') {
+     var listItems = document.querySelectorAll('.the_ul li');
+     listItems.forEach(function(item) {
+       item.classList.remove('active');
+     });
+     event.target.parentNode.classList.add('active');
+   }
+ });
  
+
+
 
 document.addEventListener('DOMContentLoaded', function(){
    var typed = new Typed(".auto_typed", {
