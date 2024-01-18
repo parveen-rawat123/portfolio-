@@ -776,6 +776,7 @@ justify-content: space-evenly;
         right: 10px;
         z-index: 2;
         padding: 50px 70px;
+        height: 100%;
         background-color: antiquewhite;
     }
 
