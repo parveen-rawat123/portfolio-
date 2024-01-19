@@ -1,22 +1,14 @@
-//  let navbaar = document.querySelector('.the_ul');
-//  navbaar.addEventListener('click', function(event) {
-//    if (event.target.tagName === 'LI') {
-//      var listItems = document.querySelectorAll('.the_ul li');
-//      listItems.forEach(function(item) {
-//        item.classList.remove('active');
-//      });
-//      event.target.classList.add('active');
-//    }
-//  });
+document.querySelector('.the_ul').addEventListener('click', function(event) {
+   if (event.target.tagName === 'A') {
+     var listItems = document.querySelectorAll('.the_ul li');
+     listItems.forEach(function(item) {
+       item.classList.remove('active');
+     });
+     event.target.parentNode.classList.add('active');
+   }
+ });
  
-let toggleBtn = document.querySelector('.navbar-toggle');
-let sidebar = document.querySelector('.side-bar');
 
-toggleBtn.addEventListener("click",()=>{
-    sidebar.classList.toggle('active');
-    toggleBtn.classList.toggle('navbar-toggle-btn');
-
-})
 
 
 document.addEventListener('DOMContentLoaded', function(){

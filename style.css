@@ -686,7 +686,9 @@ justify-content: space-evenly;
 
 
 
+@media only screen and (max-width: 1185px) {
 
+}
 
 
 
@@ -833,6 +835,8 @@ justify-content: space-evenly;
     }
 
 }
+
+
     .active a{
         color: orangered; 
       }
