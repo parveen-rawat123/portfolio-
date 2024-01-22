@@ -888,3 +888,7 @@ justify-content: space-evenly;
 
 
 }
+
+.active{
+    color: #7289da;
+}

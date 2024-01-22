@@ -1,13 +1,34 @@
-document.querySelector('.the_ul').addEventListener('click', function(event) {
-   if (event.target.tagName === 'A') {
-     var listItems = document.querySelectorAll('.the_ul li');
-     listItems.forEach(function(item) {
-       item.classList.remove('active');
-     });
-     event.target.parentNode.classList.add('active');
-   }
- });
- 
+// document.querySelector('.the_ul').addEventListener('click', function(event) {
+//    if (event.target.tagName === 'A') {
+//      var listItems = document.querySelectorAll('.the_ul li');
+//      listItems.forEach(function(item) {
+//        item.classList.remove('active');
+//      });
+//      event.target.parentNode.classList.add('active');
+//    }
+//  });
+
+let anime = document.querySelectorAll('.anime');
+var listItems = document.querySelectorAll('.the_ul li a');
+
+window.onscroll = ()=>{
+anime.forEach(element => {
+  let top = window.screenX;
+  let offset = element.offsetRight;
+  let height = element.offsetHeight;
+  let id = element.getAttribute('id')
+  if(top >= offset && top < offset + height){
+    listItems.forEach(links => {
+      links.classList.remove('active');
+      document.querySelector('.the_ul li a [href* = '+ id +']').classList.add('active');
+    });  
+  }
+});
+} 
+
+
+
+
 
 
 
