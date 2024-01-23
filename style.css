@@ -372,19 +372,22 @@ body {
     font-size: 0.9rem;
 }
 
+
+/* 
 .deatails {
     margin: 2rem 1.3rem;
     padding: 10px 0;
-    display: grid;
-    grid-template-columns: 55%  45%;
-    grid-template-rows: 80% 20%;
+    display: flex;
+    flex-wrap: wrap;
     width: 95%;
+    background-color: #7289da;
 }
 
 .keyskill {
     gap: 25px;
     display: flex;
     border-right: 2px solid black;
+    width: 50%;
 }
 
 .keyskill p {
@@ -410,6 +413,7 @@ body {
     gap: 30px;
     padding: 10px;
     height: 100%;
+    width: 50%;
 }
 .skills img{
     height: auto;
@@ -431,8 +435,11 @@ body {
 
 .btns{
     display: flex;    
-    justify-content:space-around;
+    height: 200px;
+    width: 50%;
+    background-color: #0088cc;
     align-items: center;
+    justify-content:space-around;
     border-right: 2px solid black;
 }
 .backend img:nth-child(1){
@@ -493,7 +500,7 @@ justify-content: space-evenly;
     color: white;
     border-radius: 8px;
     z-index: 2;
-}
+} */
 
 
 
@@ -687,7 +694,9 @@ justify-content: space-evenly;
 
 
 @media only screen and (max-width: 1185px) {
-
+  .keyskill{
+width: 50%;
+  }
 }
 
 
@@ -889,6 +898,3 @@ justify-content: space-evenly;
 
 }
 
-.active{
-    color: #7289da;
-}
