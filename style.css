@@ -422,7 +422,6 @@ body {
 }
 .skills img:hover{
     transform: scale(1.05);
-
 }
 .frontent{
     display: flex;
@@ -471,7 +470,6 @@ justify-content: space-evenly;
 
 .secondskill {
     display: grid;
-
     padding-left: 10px;
 }
 .red{
@@ -515,6 +513,19 @@ justify-content: space-evenly;
     background-color:aqua;
     grid-row: 1/11;
     grid-column: 1/7;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+.firstskill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.secondskill{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .skillsimg{
     background-color: blueviolet;
@@ -534,6 +545,10 @@ justify-content: space-evenly;
     width: 90px;
     transition: all 0.8s;
 }
+
+.skills img:hover{
+    transform: scale(1.05);
+}
 .downlodecv a{
     text-decoration: none;
     background-color: #ec1839;
@@ -552,7 +567,28 @@ justify-content: space-evenly;
     z-index: 2;
 }
 
-
+.backend img:nth-child(1){
+    width: 25%;
+   }
+   .backend img:nth-child(2){
+       width: 40%;
+       
+   }
+   .db{
+       display: flex;
+       justify-content: space-evenly;
+   }
+   .db img:nth-child(1){
+       width: 60%;
+   }
+   .other{
+   display: flex;
+   justify-content: space-evenly;
+   
+   }
+   .other img:nth-child(1){
+       width: 30%;
+   }
 
 
 
