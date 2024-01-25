@@ -504,7 +504,13 @@ justify-content: space-evenly;
     width: 95%;
     background-color: #00a6fb;
 }
-
+.personalinfo{
+    display: flex;
+    justify-content: space-evenly;
+}
+.info{
+    text-align: center;
+}
 
 
 
