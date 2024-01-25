@@ -501,16 +501,21 @@ justify-content: space-evenly;
 } */
 
 .mydetails{
-    width: 95%;
-    background-color: #00a6fb;
+    width: 97%;
+    margin: 50px 10px;
 }
 .personalinfo{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 5rem;
 }
 .info{
     text-align: center;
+    bo
 }
+
+
 
 
 
