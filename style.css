@@ -530,7 +530,10 @@ justify-content: space-evenly;
 .skillsimg{
     background-color: blueviolet;
     grid-row: 1/13;
-    grid-column: 7/13;
+    grid-column: 7/13;display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 .btns{
   background-color: #333;
