@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Page Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-r1aSxlMj3u1Wh5+oAVsPnjzpjlJOY5+01Y9nJ3CJGB9jOW5Lp8RaL4Njh2Rhv00d63s0elipYIIAbdL6xwoPAdQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        /* Add your styles for default and clicked states here */
+        .the_li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+        .the_li a {
+            text-decoration: none;
+            padding: 5px 10px;
+            color: #000; /* Default color */
+        }
+        .the_li.clicked a {
+            color: #ff0000; /* Change to your desired clicked color */
+        }
+    </style>
+</head>
+<body>
+
+    <ul class="the_ul">
+        <li class="the_li">
+            <a href="#mainbody">
+                <i class="fa-solid fa-house"></i> Home
+            </a>
+        </li>
+        <li class="the_li">
+            <a href="#projects">
+                <i class="fa-sharp fa-solid fa-diagram-project"></i> Project
+            </a>
+        </li>
+        <li class="the_li">
+            <a href="#aboutme_section">
+                <i class="fa-solid fa-user"></i> About
+            </a>
+        </li>
+        <li class="the_li">
+            <a href="#form">
+                <i class="fa-solid fa-comment"></i> Contact
+            </a>
+        </li>
+    </ul>
+
+    <script>
+        // Get all elements with class 'the_li'
+        var navbarItems = document.querySelectorAll('.the_li');
+
+        // Add click event listener to each navbar item
+        navbarItems.forEach(function(item) {
+            item.addEventListener('click', function() {
+                // Remove 'clicked' class from all li elements
+                navbarItems.forEach(function(navItem) {
+                    navItem.classList.remove('clicked');
+                });
+
+                // Add 'clicked' class to the clicked li element
+                item.classList.add('clicked');
+            });
+        });
+    </script>
+
+</body>
+</html>

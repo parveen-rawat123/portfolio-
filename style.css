@@ -102,6 +102,9 @@ body {
     color: black;
     font-size: 1rem;
 }
+.the_li.clicked a {
+    color: #ff0000; 
+}
 
 .nav_item ul i {
     padding: 0px 10px;
@@ -342,6 +345,9 @@ body {
     font-size: 3rem;
     position: relative;
 }
+.aboutme_heading h2 span{
+    color: #095b85;
+}
 
 .aboutme_heading h2::before {
     content: "";
@@ -504,6 +510,11 @@ justify-content: space-evenly;
     width: 97%;
     margin: 50px 10px;
 }
+.personal_information{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
 .personalinfo{
     display: flex;
     justify-content: space-evenly;
@@ -512,10 +523,23 @@ justify-content: space-evenly;
 }
 .info{
     text-align: center;
-    bo
+   box-shadow:  0 0 5px 1px #3333;
+    padding: 5px 15px;
+    border-radius: 10px;
 }
-
-
+.info p:nth-child(1){
+    color: #0088cc;
+    font-weight: 600;
+}
+.personalinfo> :nth-child(1), .personalinfo > :nth-child(2) {
+    padding: 5px 35px;
+}
+ .one> :nth-child(1){
+    margin-left: 20px;
+}
+.one> :nth-child(2){
+    margin-left: 10px;
+}
 
 
 
@@ -529,7 +553,9 @@ justify-content: space-evenly;
     position: relative;
     margin: 7rem 0  0 1.3rem;
 }
-
+.getintouch h2 span{
+    color: #095b85;
+}
 .getintouch h2::before {
     content: "";
     position: absolute;
