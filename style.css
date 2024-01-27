@@ -99,8 +99,9 @@ body {
     color: black;
     font-size: 1rem;
 }
+
 .the_li.clicked a {
-    color: #ff0000; 
+    color: #ff0000;
 }
 
 .nav_item ul i {
@@ -342,7 +343,8 @@ body {
     font-size: 3rem;
     position: relative;
 }
-.aboutme_heading h2 span{
+
+.aboutme_heading h2 span {
     color: #095b85;
 }
 
@@ -377,51 +379,60 @@ body {
 
 
 
-.mydetails{
+.mydetails {
     width: 97%;
     margin: 50px 10px;
 }
-.personal_information{
+
+.personal_information {
     display: flex;
     flex-direction: column;
     row-gap: 30px;
 }
-.personalinfo{
+
+.personalinfo {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     column-gap: 5rem;
 }
-.info{
+
+.info {
     text-align: center;
-   box-shadow:  0 0 5px 1px #3333;
+    box-shadow: 0 0 5px 1px #3333;
     padding: 5px 15px;
     border-radius: 10px;
 }
-.info p:nth-child(1){
+
+.info p:nth-child(1) {
     color: #0088cc;
     font-weight: 600;
 }
-.personalinfo> :nth-child(1), .personalinfo > :nth-child(2) {
+
+.personalinfo> :nth-child(1),
+.personalinfo> :nth-child(2) {
     padding: 5px 35px;
 }
- .one> :nth-child(1){
+
+.one> :nth-child(1) {
     margin-left: 20px;
 }
-.one> :nth-child(2){
+
+.one> :nth-child(2) {
     margin-left: 10px;
 }
 
 /* keyskill css */
-.keyskill{
+.keyskill {
     width: 97%;
     margin: 50px 20px;
 }
 
-.keyskill h2{
+.keyskill h2 {
     font-size: 2rem;
     position: relative;
 }
+
 .keyskill h2::before {
     content: "";
     position: absolute;
@@ -440,23 +451,75 @@ body {
     top: 3.2rem;
     left: 0px;
 }
+.skill{
+    position: relative;
+}
+
+.outer {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.inner {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
+        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number{
+    color: #0077B5;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+#lang{
+    color:#7289da;
+}
+circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width:20px;
+    stroke-dasharray:472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+  @keyframes anim{
+    100%{
+        stroke-dashoffset: 165;
+    }
+  }
 
 
 
+/* get in touch section */
 
-
-
-
-
-
-.getintouch h2  {
+.getintouch h2 {
     font-size: 3rem;
     position: relative;
-    margin: 7rem 0  0 1.3rem;
+    margin: 7rem 0 0 1.3rem;
 }
-.getintouch h2 span{
+
+.getintouch h2 span {
     color: #095b85;
 }
+
 .getintouch h2::before {
     content: "";
     position: absolute;
@@ -483,16 +546,17 @@ body {
     margin: 1rem 1.3rem 0 1.3rem;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
     border-radius: 10px;
 }
 
-.contacttext p{
+.contacttext p {
     font-size: 0.85rem;
-    color:darkslategray;
+    color: darkslategray;
 
 }
-.mainto{
+
+.mainto {
     display: flex;
     align-items: center;
     padding: 10px 20px 10px 5px;
@@ -504,31 +568,37 @@ body {
 
 .mailicon i {
     font-size: 1.5rem;
-    padding:  5px 10px;
-    background-color:rgba(128, 128, 128, 0.212);
+    padding: 5px 10px;
+    background-color: rgba(128, 128, 128, 0.212);
     border-radius: 5px;
 }
-.mailtext{
+
+.mailtext {
     padding-left: 15px;
 }
-.mailtext a{
+
+.mailtext a {
     font-size: 0.94rem;
 }
+
 .contectform {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
     background-color: #e9ecef;
 }
-.contectform h3{
+
+.contectform h3 {
     padding-bottom: 15px;
     font-weight: 600;
 }
-.contectform form{
+
+.contectform form {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
+
 .contectform input {
     width: 18rem;
     height: 38px;
@@ -537,24 +607,28 @@ body {
     background-color: white;
     transition: all 0.8s;
 }
-.contectform input:focus{
+
+.contectform input:focus {
     border: 2px solid rgba(0, 0, 255, 0.432);
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7); 
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
 }
-.contectform input::placeholder{
+
+.contectform input::placeholder {
     font-size: 0.9rem;
     padding-left: 7px;
 }
-.contectform textarea::placeholder{
+
+.contectform textarea::placeholder {
     font-family: 'Roboto', sans-serif;
     padding-left: 7px;
 }
 
-.contectform textarea:focus{
+.contectform textarea:focus {
     border: 2px solid rgba(0, 0, 255, 0.432);
-    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7); 
+    box-shadow: 0 0 15px rgba(52, 152, 219, 0.7);
 
 }
+
 .contectform textarea {
     border-radius: 5px;
     background-color: white;
@@ -566,13 +640,14 @@ body {
     left: 28%;
     color: white;
     font-size: 0.9rem;
-    padding:11px 10px;
+    padding: 11px 10px;
     border-radius: 7px;
     border: none;
-    background-color:#00a6fb;
+    background-color: #00a6fb;
     transition: all 2s;
 }
-.contectform button:hover{
+
+.contectform button:hover {
     transform: scale(1.05);
     box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
 
@@ -581,55 +656,62 @@ body {
 
 
 /* footer css */
-.footer{
+.footer {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.footericon{
+
+.footericon {
     display: flex;
     gap: 40px;
     font-size: 35px;
 }
-.footericon i{
+
+.footericon i {
     color: black;
     transition: all 1.3s;
 }
-.footericon .fa-instagram:hover{
+
+.footericon .fa-instagram:hover {
     color: rgba(255, 0, 0, 0.5);
     transform: rotateX('120');
 }
-.footericon .fa-linkedin:hover{
+
+.footericon .fa-linkedin:hover {
     color: #0077B5;
     transform: scale(1.1);
 }
 
-.footericon .fa-twitter:hover{
+.footericon .fa-twitter:hover {
     color: #1DA1F2;
     transform: scale(1.1);
 }
 
-.footericon .fa-github:hover{
-    color:rgba(0, 0, 0, 0.767);
+.footericon .fa-github:hover {
+    color: rgba(0, 0, 0, 0.767);
     transform: scale(1.1);
 }
-.footericon .fa-discord:hover{
+
+.footericon .fa-discord:hover {
     transform: scale(1.1);
-    color:  #7289da;
+    color: #7289da;
 }
-.footericon .fa-telegram:hover{
+
+.footericon .fa-telegram:hover {
     color: #0088cc;
     transform: scale(1.1);
 }
 
 
-.copyright p:nth-child(odd){
+.copyright p:nth-child(odd) {
     font-size: 0.9rem;
-    font-weight:600;
+    font-weight: 600;
     text-align: center;
 }
-.copyright p:nth-child(even){
+
+.copyright p:nth-child(even) {
     color: red;
     font-size: 1.3rem;
     font-weight: 500;
@@ -641,9 +723,9 @@ body {
 
 
 @media only screen and (max-width: 1185px) {
-  .keyskill{
-width: 50%;
-  }
+    .keyskill {
+        width: 50%;
+    }
 }
 
 
@@ -793,14 +875,14 @@ width: 50%;
 }
 
 
-    .active a{
-        color: orangered; 
-      }
-  
-    .active i {
-        color: orangered; 
-      }
-  
+.active a {
+    color: orangered;
+}
+
+.active i {
+    color: orangered;
+}
+
 
 
 
@@ -844,4 +926,3 @@ width: 50%;
 
 
 }
-
