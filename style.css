@@ -92,10 +92,7 @@ body {
     transition: all 0.8s;
 }
 
-.nav_item ul li:hover {
-    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.02);
-}
+
 
 .nav_item ul li a {
     text-decoration: none;
@@ -379,132 +376,6 @@ body {
 }
 
 
-/* 
-.deatails {
-    margin: 2rem 1.3rem;
-    padding: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    width: 95%;
-    background-color: #7289da;
-}
-
-.keyskill {
-    gap: 25px;
-    display: flex;
-    border-right: 2px solid black;
-    width: 50%;
-}
-
-.keyskill p {
-    color: #ec1839;
-    padding: 5px 2px;
-    border-radius: 5px;
-    transition: all 1s;
-    cursor: pointer;
-}
-
-.keyskill p:hover {
-    box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
-    transform: scale(1.02);
-}
-
-.keyskill span {
-    color: black;
-}
-
-.skills{
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    padding: 10px;
-    height: 100%;
-    width: 50%;
-}
-.skills img{
-    height: auto;
-    width: 90px;
-    transition: all 0.8s;
-}
-.skills img:hover{
-    transform: scale(1.05);
-}
-.frontent{
-    display: flex;
-    justify-content: space-evenly;
-}
-.backend{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.btns{
-    display: flex;    
-    height: 200px;
-    width: 50%;
-    background-color: #0088cc;
-    align-items: center;
-    justify-content:space-around;
-    border-right: 2px solid black;
-}
-.backend img:nth-child(1){
- width: 25%;
-}
-.backend img:nth-child(2){
-    width: 40%;
-    
-}
-.db{
-    display: flex;
-    justify-content: space-evenly;
-}
-.db img:nth-child(1){
-    width: 60%;
-}
-.other{
-display: flex;
-justify-content: space-evenly;
-
-}
-.other img:nth-child(1){
-    width: 30%;
-}
-.firstskill {
-    display: grid;
-    gap: 30px;  
-}
-
-.secondskill {
-    display: grid;
-    padding-left: 10px;
-}
-.red{
-    background-color: #00a6fb;
-    height: 100px;
-}
-.Brithday,
-.Role,
-.Degree {
-    width: 13rem;
-}
-
-.downlodecv a{
-    text-decoration: none;
-    background-color: #ec1839;
-    padding: 10px 10px;
-    color: white;
-    border-radius: 8px;
-    z-index: 2;
-}
-
-.hireme a{
-    text-decoration: none;
-    background-color: #ec1839;
-    padding: 10px 15px;
-    color: white;
-    border-radius: 8px;
-    z-index: 2;
-} */
 
 .mydetails{
     width: 97%;
@@ -541,6 +412,34 @@ justify-content: space-evenly;
     margin-left: 10px;
 }
 
+/* keyskill css */
+.keyskill{
+    width: 97%;
+    margin: 50px 20px;
+}
+
+.keyskill h2{
+    font-size: 2rem;
+    position: relative;
+}
+.keyskill h2::before {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 4.5rem;
+    background-color: #ec1839;
+    top: 2.8rem;
+}
+
+.keyskill h2::after {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 2.5rem;
+    background-color: blue;
+    top: 3.2rem;
+    left: 0px;
+}
 
 
 
@@ -548,7 +447,9 @@ justify-content: space-evenly;
 
 
 
-.getintouch h2{
+
+
+.getintouch h2  {
     font-size: 3rem;
     position: relative;
     margin: 7rem 0  0 1.3rem;
