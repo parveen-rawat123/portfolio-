@@ -423,89 +423,47 @@ body {
 }
 
 /* keyskill css */
-.keyskill {
-    width: 97%;
-    margin: 50px 20px;
-}
-
-.keyskill h2 {
-    font-size: 2rem;
+.loader{
     position: relative;
+  display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+gap: 40px;
+position: relative;
 }
-
-.keyskill h2::before {
-    content: "";
-    position: absolute;
-    height: 0.24rem;
-    width: 4.5rem;
-    background-color: #ec1839;
-    top: 2.8rem;
+.loader .card{
+position: relative;
+width: 220px;
+height: 250px;
+background-color: #333;
+display: flex;
+justify-content: center;
+align-items: center;
 }
-
-.keyskill h2::after {
-    content: "";
-    position: absolute;
-    height: 0.24rem;
-    width: 2.5rem;
-    background-color: blue;
-    top: 3.2rem;
-    left: 0px;
-}
-.skill{
+.loader .card .percent{
     position: relative;
+    width: 150px;
+    height: 150px;
 }
-
-.outer {
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-    padding: 20px;
-    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
-        -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+.loader .card .percent svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
 }
-
-.inner {
-    height: 120px;
-    width: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
-        inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
-        -0.5px -0.5px 0px rgba(255, 255, 255, 1),
-        0.5px 0.5px 0px rgba(0, 0, 0, 0.15),
-        0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+.loader .card .percent svg circle{
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke:black;
+    transform: translate(5px 5px );
 }
-
-#number{
-    color: #0077B5;
-    font-size: 1.4rem;
-    font-weight: 600;
+.loader .card .percent svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset:calc(440 - (440 *var(--num)) / 100);
 }
-#lang{
-    color:#7289da;
-}
-circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width:20px;
-    stroke-dasharray:472;
-    stroke-dashoffset: 472;
-    animation: anim 2s linear forwards;
-}
-svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-  @keyframes anim{
-    100%{
-        stroke-dashoffset: 165;
-    }
-  }
-
 
 
 /* get in touch section */

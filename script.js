@@ -45,16 +45,17 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 // skills loader
-
-let num = document.querySelector('#number');
+let num = document.querySelectorAll('#number');
 let counter = 0;
 
 setInterval(()=>{
+num.forEach(element => { 
    if(counter == 95){
-     clearInterval();
+      clearInterval();
    }
    else{
       counter += 1;
-      num.innerHTML = `${counter}%` 
+      element.innerHTML = `${counter}%` 
    }
+});
 },20);
