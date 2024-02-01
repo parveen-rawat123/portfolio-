@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="10"> -->
   <title>portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="shortcut icon" href="fav2.jpeg" type="image/x-icon">
+  <script src="https://unpkg.com/scrollreveal"></script>
 </head>
-
-
 
 <body>
   <!-- left side navbaar html  -->
@@ -66,7 +66,7 @@
       <div id="projects" class="anime">
         <h2> Project </h2>
         <div class="portfolio_project">
-          <div class="porfolio_img">
+          <div class="porfolio_img" >
             <img src="/image/finalimage.jpg">
           </div>
           <div class="portfolio_about">
@@ -172,17 +172,9 @@
           <h2> My skills </h2>
 
           <div class="loader">
-        <div class="card">
-         <div class="percent" style="--clr:#04fc43;--num:85;">
-    <svg>
-      <cricle sx = "70" cy="70"  r="70"></cricle>
-      <cricle sx = "70" cy="70"  r="70"></cricle>
-    </svg>
-         </div>       
-       </div>
-       <div class="card"></div>
-       <div class="card"></div>
-       <div class="card"></div>
+
+          
+
           </div>
 
 
@@ -249,6 +241,17 @@
   </div>
   <script src="script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-</body>
+  <script>
+    ScrollReveal({
+       reset: true,
+       distance : '60px',
+       duration :2500,
+       delay : 400
+        });
+      
+        ScrollReveal().reveal('#mainbody', { delay: 300,origin : 'left' });
 
+
+</script>
+</body>
 </html>

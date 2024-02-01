@@ -280,11 +280,23 @@ body {
 .portfolio_project {
     display: flex;
     margin: 5rem 0 0 1rem;
+
 }
 
-.porfolio_img {
-    width: 50%;
-}
+    .porfolio_img {
+        width: 50%;
+        animation: fade-in linear forwards;
+        animation-timeline: view();
+    
+    }
+    @keyframes fade-in {
+        from{
+            scale: .8; 
+        }
+        to{
+            scale: 1.; 
+        }
+    }
 
 .porfolio_img img {
     width: 93%;
@@ -390,6 +402,11 @@ body {
     row-gap: 30px;
 }
 
+
+
+
+
+
 .personalinfo {
     display: flex;
     justify-content: space-evenly;
@@ -402,6 +419,7 @@ body {
     box-shadow: 0 0 5px 1px #3333;
     padding: 5px 15px;
     border-radius: 10px;
+
 }
 
 .info p:nth-child(1) {
@@ -423,48 +441,6 @@ body {
 }
 
 /* keyskill css */
-.loader{
-    position: relative;
-  display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-gap: 40px;
-position: relative;
-}
-.loader .card{
-position: relative;
-width: 220px;
-height: 250px;
-background-color: #333;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-.loader .card .percent{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-.loader .card .percent svg{
-    position: relative;
-    width: 150px;
-    height: 150px;
-}
-.loader .card .percent svg circle{
-    width: 100%;
-    height: 100%;
-    fill: transparent;
-    stroke-width: 2;
-    stroke:black;
-    transform: translate(5px 5px );
-}
-.loader .card .percent svg circle:nth-child(2) {
-    stroke: var(--clr);
-    stroke-dasharray: 440;
-    stroke-dashoffset:calc(440 - (440 *var(--num)) / 100);
-}
-
 
 /* get in touch section */
 
