@@ -283,20 +283,22 @@ body {
 
 }
 
-    .porfolio_img {
-        width: 50%;
-        animation: fade-in linear forwards;
-        animation-timeline: view();
-    
+.porfolio_img {
+    width: 50%;
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+
+}
+
+@keyframes fade-in {
+    from {
+        scale: .8;
     }
-    @keyframes fade-in {
-        from{
-            scale: .8; 
-        }
-        to{
-            scale: 1.; 
-        }
+
+    to {
+        scale: 1.;
     }
+}
 
 .porfolio_img img {
     width: 93%;
@@ -402,8 +404,64 @@ body {
     row-gap: 30px;
 }
 
+/* scroller */
+.scroller {
+    max-width: 600px;
+}
+
+.scroller_inner {
+    padding-block: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.scroller[data-animated="true"] {
+    border:  5px solid lime;
+    overflow: hidden;
+   -webkit-mask: linear-gradient(
+           90deg,
+           transparent,
+           white 20%,
+           white 80%,
+            transparent
+            );
+            mask: linear-gradient(
+                90deg,
+                transparent,
+                white 20%,
+                white 80%,
+                 transparent
+                 );
+}
+
+.scroller[data-animated="true"] .scroller_inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation:  scroll var(--_animation-duration,40s)
+    var(--_animation-duration,forwards)
+     linear infinite;
+}
+
+.scroller[data-direction="right"]{
+    --_animation-direction :forwards;
+}
 
 
+
+@keyframes scroll{
+    to{
+        transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+.scroller_inner li {
+    list-style: none;
+    background-color: violet;
+    border-radius: 10px;
+}
 
 
 
