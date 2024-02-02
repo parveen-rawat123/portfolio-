@@ -435,20 +435,20 @@ body {
                  transparent
                  );
 }
-
 .scroller[data-animated="true"] .scroller_inner {
     width: max-content;
     flex-wrap: nowrap;
-    animation:  scroll var(--_animation-duration,40s)
-    var(--_animation-duration,forwards)
+    animation:  scroll var(--_animation-duration,120s)
+    var(--_animation-direction,forwards)
      linear infinite;
 }
-
 .scroller[data-direction="right"]{
+    --_animation-direction :reverse;
+    --_animation-duration:30s;
+}
+.scroller[data-direction="left"]{
     --_animation-direction :forwards;
 }
-
-
 
 @keyframes scroll{
     to{
@@ -456,11 +456,14 @@ body {
     }
 }
 
-
 .scroller_inner li {
     list-style: none;
-    background-color: violet;
     border-radius: 10px;
+   
+}
+.scroller_inner li img{
+ height:100px;
+ 
 }
 
 
