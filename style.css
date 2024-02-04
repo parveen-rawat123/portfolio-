@@ -390,9 +390,6 @@ body {
     margin-top: 1rem;
     font-size: 0.9rem;
 }
-
-
-
 .mydetails {
     width: 97%;
     margin: 50px 10px;
@@ -405,8 +402,18 @@ body {
 }
 
 /* scroller */
+.keyskill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top:50px ;
+    background-color: #e1ecf7;
+   border-radius: 10px;
+}
 .scroller {
-    max-width: 600px;
+    width: 80%;
+    height: 150px;
 }
 
 .scroller_inner {
@@ -414,11 +421,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .scroller[data-animated="true"] {
-    border:  5px solid lime;
     overflow: hidden;
    -webkit-mask: linear-gradient(
            90deg,
@@ -459,12 +465,12 @@ body {
 .scroller_inner li {
     list-style: none;
     border-radius: 10px;
+    
    
 }
 .scroller_inner li img{
- height:100px;
- 
-}
+ height:90px;
+ }
 
 
 
@@ -480,7 +486,6 @@ body {
     box-shadow: 0 0 5px 1px #3333;
     padding: 5px 15px;
     border-radius: 10px;
-
 }
 
 .info p:nth-child(1) {
@@ -601,6 +606,7 @@ body {
     border: none;
     background-color: white;
     transition: all 0.8s;
+    margin-top: 10px;
 }
 
 .contectform input:focus {
@@ -647,8 +653,6 @@ body {
     box-shadow: 10px 1px 10px 0 rgba(0, 0, 0, 0.2), 0 15px 22px 0 rgba(0, 0, 0, 0.19);
 
 }
-
-
 
 /* footer css */
 .footer {
@@ -712,8 +716,12 @@ body {
     font-weight: 500;
 }
 
-
-
+.myform span{
+font-size: 0.8rem;
+color: #ec1839;
+margin-left: 1rem;
+opacity: 0;
+}
 
 
 
