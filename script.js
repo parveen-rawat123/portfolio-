@@ -1,3 +1,4 @@
+// navbaar animate  
 var navbarItems = document.querySelectorAll('.the_li');
 navbarItems.forEach(function (item) {
    item.addEventListener('click', function () {
@@ -7,8 +8,6 @@ navbarItems.forEach(function (item) {
       item.classList.add('clicked');
    });
 });
-
-
 
 
 document.addEventListener('DOMContentLoaded', function () {

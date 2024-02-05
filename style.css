@@ -513,7 +513,7 @@ body {
 .getintouch h2 {
     font-size: 3rem;
     position: relative;
-    margin: 7rem 0 0 1.3rem;
+    margin: 1rem 0 0 1.3rem;
 }
 
 .getintouch h2 span {
@@ -549,11 +549,12 @@ body {
     justify-content: space-around;
     border-radius: 10px;
 }
-
+#form a{
+    text-decoration: none;
+}
 .contacttext p {
+    color: #333;
     font-size: 0.85rem;
-    color: darkslategray;
-
 }
 
 .mainto {
@@ -571,6 +572,7 @@ body {
     padding: 5px 10px;
     background-color: rgba(128, 128, 128, 0.212);
     border-radius: 5px;
+    color: black;
 }
 
 .mailtext {
@@ -675,7 +677,7 @@ body {
 
 .footericon .fa-instagram:hover {
     color: rgba(255, 0, 0, 0.5);
-    transform: rotateX('120');
+    transform:scale(1.1);
 }
 
 .footericon .fa-linkedin:hover {
@@ -712,7 +714,7 @@ body {
 
 .copyright p:nth-child(even) {
     color: red;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 500;
 }
 
@@ -730,12 +732,6 @@ opacity: 0;
         width: 50%;
     }
 }
-
-
-
-
-
-
 
 @media only screen and (max-width: 1150px) {
     .mainimage {
@@ -813,16 +809,18 @@ opacity: 0;
     .nav_item ul {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         position: absolute;
-        gap: 20px;
-        top: 3rem;
-        right: 10px;
+        width: 100%;
+        gap: 10px;
+        top: 4rem;
+        right: 1px;
         z-index: 2;
         padding: 50px 70px;
-        height: 100%;
-        background-color: antiquewhite;
+        height: 50%;
+        background-color:#9EDDFF;
     }
-
     .menu-toggle {
         display: block;
         cursor: pointer;
