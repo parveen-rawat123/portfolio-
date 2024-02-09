@@ -17,7 +17,6 @@
   <div class="container">
 
     <div class="left_navbaar">
-
       <div class="my_name">
         <h1><span>P</span>raveen</h1>
       </div>
@@ -70,7 +69,7 @@
             <img src="/image/finalimage.jpg">
           </div>
           <div class="portfolio_about">
-            <h1>Portfolio</h1>
+            <h3>Portfolio</h3>
             <p>Explore my portfolio website to discover a curated collection of my creative work, showcasing my skills
               in design, development, and more.</p>
             <div class="portfolio_a">
@@ -85,7 +84,7 @@
             <img src="/image/webapp.jpg">
           </div>
           <div class="portfolio_about">
-            <h1>Spotify Web</h1>
+            <h3>Spotify Web</h3>
             <p>Explore my portfolio website to discover a curated collection of my creative work, showcasing my skills
               in design, development, and more.</p>
             <div class="portfolio_a">
@@ -99,7 +98,7 @@
             <img src="/image/primium.jpg">
           </div>
           <div class="portfolio_about">
-            <h1>Spotify Primium</h1>
+            <h3>Spotify Primium</h3>
             <p>Explore my portfolio website to discover a curated collection of my creative work, showcasing my skills
               in design, development, and more.</p>
             <div class="portfolio_a">
@@ -167,33 +166,33 @@
         </div>
 
 
-        <div class="keyskill">
+        <div class="skilldiv">
           <h2> My skills </h2>
-
-          <div class="scroller" data-direction="left">
-          <ul class="tag-list scroller_inner">
-         <li><img src="/image/html.png.png" ></li>
-         <li> <img src="/image/css.png.png" alt=""></li>
-         <li> <img src="/image/js.png.png" alt=""></li>
-         <li><img src="/image/bootstrap-logo-shadow.png" alt=""></li>
-         <li><img src="/image/react.png.png" alt=""></li>
-         <li><img src="/image/tailwind-css-icon.webp"></li>
-          </ul>
-        </div>
-
-        <div class="scroller" data-direction="right">
-            <ul class="tag-list scroller_inner">
-              <li><img src="/image/nodejs.png.png" alt=""></li>
-              <li><img src="/image/expressjs.png.png" alt=""></li>
-              <li><img src="/image/sql.png.png" alt=""></li>
-              <li><img src="/image/mongodp.png.png" alt=""></li>
-              <li><img src="/image/gitlogo.png" alt=""></li>
-              <li><img src="/image/github.png.png" alt=""></li>
+          <div class="keyskill">
+            <div class="scroller" data-direction="left">
+              <ul class="tag-list scroller_inner">
+                <li><img src="/image/html.png.png" ></li>
+                <li> <img src="/image/css.png.png" alt=""></li>
+                <li> <img src="/image/js.png.png" alt=""></li>
+                <li><img src="/image/bootstrap-logo-shadow.png" alt=""></li>
+                <li><img src="/image/react.png.png" alt=""></li>
+                <li><img src="/image/tailwind-css-icon.webp" style="height: 3rem;"></li>
+              </ul>
+            </div>
+            
+            <div class="scroller" data-direction="right">
+              <ul class="tag-list scroller_inner">
+                <li><img src="/image/github.png.png" alt=""></li>
+                <li><img src="/image/gitlogo.png" alt=""></li>
+                <li><img src="/image/mongodp.png.png" alt=""></li>
+                <li><img src="/image/sql.png.png" alt=""></li>
+                <li><img src="/image/expressjs.png.png" alt=""></li>
+                <li><img src="/image/nodejs.png.png" alt=""></li>
             </ul>
           </div>
-
         </div>
       </div>
+    </div>
 
 
       <div class="getintouch">
@@ -229,11 +228,11 @@
         <div class="contectform">
           <h3> Send us a massage 🚀</h3>
           <form action="" name="myform" class="myform">
-            <input type="text" placeholder="Full name*" name="name">
+            <input type="text" placeholder="Full name*" name="name"/>
             <span id="error1">*</span> 
-            <input type="email" placeholder="Email address*" name="email">
+            <input type="email" placeholder="Email address*" name="email" />
             <span id="error2">*</span> 
-            <input type="number" placeholder="Contact Number*" name="number"> 
+            <input type="number" placeholder="Contact Number*" name="number"/> 
             <span id="error3">*</span> 
             <textarea placeholder="text here"  cols="30" rows="6"></textarea> <br>
             <button type="submit"> Send message</button>
@@ -248,8 +247,6 @@
             <a href="https://www.linkedin.com/in/praveen-singh-8902a4265"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://github.com/parveen-rawat123"><i class="fa-brands fa-github"></i></a>
             <a href="https://twitter.com/princeR74930066"><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa-brands fa-discord"></i></a>
-            <a href=""><i class="fa-brands fa-telegram"></i></a>
           </div>
           <div class="copyright">
             <p>Copyright &copy; 2024</p>
@@ -274,7 +271,10 @@
        delay : 400
         });
       
-        ScrollReveal().reveal('#mainbody', { delay: 300,origin : 'left' });
+        ScrollReveal().reveal('#mainbody', { 
+        delay: 300,
+        origin : 'left' 
+        });
 </script>
 </body>
 </html>

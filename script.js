@@ -85,71 +85,71 @@ let error2 = document.querySelector('#error2');
 let error3 = document.querySelector('#error3');
 
 form.addEventListener('submit', (event) => {
-    event.preventDefault();
+   event.preventDefault();
 
-    let name = document.myform.name.value;
-    let email = document.myform.email.value;
-    let number = document.myform.number.value;
+   let name = document.myform.name.value;
+   let email = document.myform.email.value;
+   let number = document.myform.number.value;
 
-    error1.style.opacity = 0; 
-    error2.style.opacity = 0; 
-    error3.style.opacity = 0; 
+   error1.style.opacity = 0;
+   error2.style.opacity = 0;
+   error3.style.opacity = 0;
 
-    // Name validation
-    if (name.trim() === "") {
-        error1.innerText = "*enter your name*";
-        error1.style.opacity = 1; 
-        return;
-    }
+   // Name validation
+   if (name.trim() === "") {
+      error1.innerText = "*enter your name*";
+      error1.style.opacity = 1;
+      return;
+   }
 
-    if (name.length < 3 || name.length >= 20) {
-        error1.innerText = "*enter your full name*";
-        error1.style.opacity = 1; 
-        return;
-    }
+   if (name.length < 3 || name.length >= 20) {
+      error1.innerText = "*enter your full name*";
+      error1.style.opacity = 1;
+      return;
+   }
 
-    // Email validation
-    if (email.trim() === "") {
-        error2.innerText = "*enter your email*";
-        error2.style.opacity = 1; 
-        return;
-    }
+   // Email validation
+   if (email.trim() === "") {
+      error2.innerText = "*enter your email*";
+      error2.style.opacity = 1;
+      return;
+   }
 
-    if (email.indexOf('@') <= 0) {
-        error2.innerText = " *@ invalid position*";
-        error2.style.opacity = 1; 
-        return;
-    }
+   if (email.indexOf('@') <= 0) {
+      error2.innerText = " *@ invalid position*";
+      error2.style.opacity = 1;
+      return;
+   }
 
-    if ((email.charAt(email.length - 4) !== '.') && (email.charAt(email.length - 3) !== '.')) {
-        error2.innerText = " *invalid position*";
-        error2.style.opacity = 1; 
-        return;
-    }
+   if ((email.charAt(email.length - 4) !== '.') && (email.charAt(email.length - 3) !== '.')) {
+      error2.innerText = " *invalid position*";
+      error2.style.opacity = 1;
+      return;
+   }
 
-    // Number validation
-    if (number.trim() === "" || number === null) {
-        error3.innerText = "*please enter your number*";
-        error3.style.opacity = 1; 
-        return;
-    }
+   // Number validation
+   if (number.trim() === "" || number === null) {
+      error3.innerText = "*please enter your number*";
+      error3.style.opacity = 1;
+      return;
+   }
 
-    if (number.length !== 10) {
-        error3.innerText = "*number must be 10 digits*";
-        error3.style.opacity = 1; 
-        return;
-    }
+   if (number.length !== 10) {
+      error3.innerText = "*number must be 10 digits*";
+      error3.style.opacity = 1;
+      return;
+   }
 
-    if (isNaN(number)) {
-        error3.innerText = "*enter numeric value*";
-        error3.style.opacity = 1; 
-        return;
-    }
+   if (isNaN(number)) {
+      error3.innerText = "*enter numeric value*";
+      error3.style.opacity = 1;
+      return;
+   }
 
-    if (!['9', '8', '7', '6'].includes(number.charAt(0))) {
-        error3.innerText = "* enter Indian mobile number*";
-        error3.style.opacity = 1; 
-        return;
-    }
-    alert("thank you for your meessage")
+   if (!['9', '8', '7', '6'].includes(number.charAt(0))) {
+      error3.innerText = "* enter Indian mobile number*";
+      error3.style.opacity = 1;
+      return;
+   }
+   alert("thank you for your meessage")
 });

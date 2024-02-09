@@ -28,7 +28,7 @@ body {
     gap: 10rem;
     padding-top: 1.8rem;
     border: transparent;
-    border-right: 2px solid black;
+    border-right: 2px solid rgba(128, 128, 128, 0.459);
 }
 
 .my_name {
@@ -92,8 +92,6 @@ body {
     transition: all 0.8s;
 }
 
-
-
 .nav_item ul li a {
     text-decoration: none;
     color: black;
@@ -123,11 +121,10 @@ body {
 /* home css start here  */
 
 #mainbody {
-    margin: 5.625rem 1.563rem 1.25rem 1.563rem;
     width: 95%;
     display: flex;
     scroll-behavior: smooth;
-
+    margin: 5.625rem 1.563rem 0 1.563rem;
 }
 
 .maintext {
@@ -242,7 +239,6 @@ body {
     bottom: -9px;
     z-index: -1;
     right: 0.01rem;
-    /* left: 13.6rem; */
     bottom: 2px;
     bottom: -8px;
 }
@@ -279,8 +275,8 @@ body {
 
 .portfolio_project {
     display: flex;
-    margin: 5rem 0 0 1rem;
-
+    margin: 2rem 0 0 1rem;
+    padding-top: 1rem;
 }
 
 .porfolio_img {
@@ -311,16 +307,17 @@ body {
 
 }
 
-.portfolio_about h1 {
+.portfolio_about h3{
     text-align: center;
+    font-size: 1.6rem;
     position: relative;
     margin-bottom: 1.25rem;
 }
 
-.portfolio_about h1::after {
+.portfolio_about h3::after {
     position: absolute;
     content: "";
-    height: 0.438rem;
+    height: 0.3rem;
     width: 3.125rem;
     background-color: #ec1839;
     bottom: -5px;
@@ -331,19 +328,19 @@ body {
 .portfolio_a {
     display: flex;
     justify-content: space-around;
-    margin-top: 1.25rem
+    margin-top: 0.5rem
 }
 
 .portfolio_about a {
     text-align: center;
     text-decoration: none;
     background-color: #ec1839;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     border-radius: 0.5rem;
     color: white;
     transition: all 0.5s linear;
-
 }
+
 
 .portfolio_about a:hover {
     transform: scale(1.04);
@@ -390,6 +387,7 @@ body {
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+
 .mydetails {
     width: 97%;
     margin: 50px 10px;
@@ -402,18 +400,47 @@ body {
 }
 
 /* scroller */
-.keyskill{
+.skilldiv {
+    margin: 50px 15px;
+}
+
+.skilldiv h2 {
+    font-size: 2.5rem;
+    position: relative;
+}
+
+.skilldiv h2::before {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 4.5rem;
+    background-color: #ec1839;
+    top: 3.5rem;
+}
+
+.skilldiv h2::after {
+    content: "";
+    position: absolute;
+    height: 0.24rem;
+    width: 2.5rem;
+    background-color: blue;
+    top: 3.9rem;
+    left: 0px;
+}
+
+.keyskill {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top:50px ;
-    background-color: #e1ecf7;
-   border-radius: 10px;
+    background-color: white;
+    min-width: 100%;
 }
+
 .scroller {
     width: 80%;
     height: 150px;
+    padding-top: 20px;
 }
 
 .scroller_inner {
@@ -421,43 +448,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.2rem;
 }
 
 .scroller[data-animated="true"] {
     overflow: hidden;
-   -webkit-mask: linear-gradient(
-           90deg,
-           transparent,
-           white 20%,
-           white 80%,
-            transparent
-            );
-            mask: linear-gradient(
-                90deg,
-                transparent,
-                white 20%,
-                white 80%,
-                 transparent
-                 );
+    -webkit-mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
+    mask: linear-gradient(90deg,
+            transparent,
+            white 20%,
+            white 80%,
+            transparent);
 }
+
 .scroller[data-animated="true"] .scroller_inner {
     width: max-content;
     flex-wrap: nowrap;
-    animation:  scroll var(--_animation-duration,120s)
-    var(--_animation-direction,forwards)
-     linear infinite;
-}
-.scroller[data-direction="right"]{
-    --_animation-direction :reverse;
-    --_animation-duration:30s;
-}
-.scroller[data-direction="left"]{
-    --_animation-direction :forwards;
+    animation: scroll var(--_animation-duration, 120s) var(--_animation-direction, forwards) linear infinite;
 }
 
-@keyframes scroll{
-    to{
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+    --_animation-duration: 20s;
+}
+
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+
+@keyframes scroll {
+    to {
         transform: translate(calc(-50% - 0.5rem));
     }
 }
@@ -465,15 +489,14 @@ body {
 .scroller_inner li {
     list-style: none;
     border-radius: 10px;
-    
-   
+
 }
-.scroller_inner li img{
- height:90px;
- }
 
+.scroller_inner li img {
+    height: 4rem;
+}
 
-
+/* persolinfo css */
 .personalinfo {
     display: flex;
     justify-content: space-evenly;
@@ -508,8 +531,10 @@ body {
 
 /* keyskill css */
 
-/* get in touch section */
 
+
+
+/* get in touch section */
 .getintouch h2 {
     font-size: 3rem;
     position: relative;
@@ -549,9 +574,11 @@ body {
     justify-content: space-around;
     border-radius: 10px;
 }
-#form a{
+
+#form a {
     text-decoration: none;
 }
+
 .contacttext p {
     color: #333;
     font-size: 0.85rem;
@@ -579,8 +606,8 @@ body {
     padding-left: 15px;
 }
 
-.mailtext a {
-    font-size: 0.94rem;
+.mailtext p:first-child {
+    color: #0c5d8f;
 }
 
 .contectform {
@@ -677,7 +704,7 @@ body {
 
 .footericon .fa-instagram:hover {
     color: rgba(255, 0, 0, 0.5);
-    transform:scale(1.1);
+    transform: scale(1.1);
 }
 
 .footericon .fa-linkedin:hover {
@@ -718,11 +745,11 @@ body {
     font-weight: 500;
 }
 
-.myform span{
-font-size: 0.8rem;
-color: #ec1839;
-margin-left: 1rem;
-opacity: 0;
+.myform span {
+    font-size: 0.8rem;
+    color: #ec1839;
+    margin-left: 1rem;
+    opacity: 0;
 }
 
 
@@ -766,7 +793,7 @@ opacity: 0;
     }
 
     .left_navbaar {
-        width: 100%;
+        width: 90%;
         height: 15vh;
         flex-direction: row;
         border: none;
@@ -787,7 +814,7 @@ opacity: 0;
     }
 
     .nav_item ul li {
-        padding-left: 30px;
+        padding-right: 30px;
     }
 
     .nav_item ul i {
@@ -819,8 +846,9 @@ opacity: 0;
         z-index: 2;
         padding: 50px 70px;
         height: 50%;
-        background-color:#9EDDFF;
+        background-color: #9EDDFF;
     }
+
     .menu-toggle {
         display: block;
         cursor: pointer;
@@ -874,16 +902,6 @@ opacity: 0;
     }
 
 }
-
-
-.active a {
-    color: orangered;
-}
-
-.active i {
-    color: orangered;
-}
-
 
 
 
