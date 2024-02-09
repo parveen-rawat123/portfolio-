@@ -283,7 +283,6 @@ body {
     width: 50%;
     animation: fade-in linear forwards;
     animation-timeline: view();
-
 }
 
 @keyframes fade-in {
@@ -307,23 +306,14 @@ body {
 
 }
 
-.portfolio_about h3{
+.portfolio_about h3 {
     text-align: center;
     font-size: 1.6rem;
     position: relative;
     margin-bottom: 1.25rem;
 }
 
-.portfolio_about h3::after {
-    position: absolute;
-    content: "";
-    height: 0.3rem;
-    width: 3.125rem;
-    background-color: #ec1839;
-    bottom: -5px;
-    right: 10rem;
-    border-radius: 0.625rem;
-}
+
 
 .portfolio_a {
     display: flex;
@@ -566,7 +556,6 @@ body {
 
 /* from css here */
 #form {
-    height: 500px;
     width: 95%;
     margin: 1rem 1.3rem 0 1.3rem;
     display: flex;
@@ -582,6 +571,7 @@ body {
 .contacttext p {
     color: #333;
     font-size: 0.85rem;
+    width: 50%;
 }
 
 .mainto {
@@ -615,6 +605,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.2);
     background-color: #e9ecef;
+    width: 41%;
 }
 
 .contectform h3 {
@@ -629,7 +620,7 @@ body {
 }
 
 .contectform input {
-    width: 18rem;
+    width: 100%;
     height: 38px;
     border-radius: 5px;
     border: none;
@@ -689,6 +680,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: #00a6fb;
 }
 
 .footericon {
@@ -793,11 +785,14 @@ body {
     }
 
     .left_navbaar {
-        width: 90%;
+        width: 100%;
         height: 15vh;
         flex-direction: row;
         border: none;
         padding: 0;
+    }
+    #mainbody{
+        margin-top: 30px;
     }
 
     .my_name {
@@ -820,6 +815,11 @@ body {
     .nav_item ul i {
         display: none;
     }
+
+    .contectform {
+        width: 45%;
+
+    }
 }
 
 @media only screen and (max-width:830px) {
@@ -829,6 +829,18 @@ body {
 
     .mainimage {
         max-height: 20rem;
+    }
+
+    .contectform {
+        width: 50%;
+    }
+
+    .porfolio_img img {
+        position: relative;
+        left: -30px;
+        top: 30px;
+        height: 13rem;
+        width: 19rem;
     }
 }
 
@@ -847,6 +859,10 @@ body {
         padding: 50px 70px;
         height: 50%;
         background-color: #9EDDFF;
+    }
+
+    .contectform {
+        width: 46%;
     }
 
     .menu-toggle {
@@ -870,6 +886,63 @@ body {
         max-height: 20rem;
     }
 
+    .porfolio_img img {
+        position: relative;
+        left: -30px;
+        top: 30px;
+        height: 13rem;
+        width: 19rem;
+    }
+    
+}
+
+@media only screen and (max-width:730px) {
+    #form {
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+    
+    .contectform {
+        width: 65%;
+    }
+
+    .contacttext {
+        width: 70%;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width:678px) {
+
+}
+
+@media only screen and (max-width:701px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .portfolio_project {
+        flex-direction: column;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .porfolio_img img {
+        height: 18rem;
+        padding: 0px;
+        margin: 0;
+        position: relative;
+        left: 55px;
+        width: 28rem;
+    }
+
+    .portfolio_about {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:735px) {
