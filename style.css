@@ -971,7 +971,6 @@ body {
         min-height: 35rem;
         min-width: 90%;
     }
-
 }
 
 @media only screen and (max-width:550px) {
@@ -1007,6 +1006,10 @@ body {
         position: relative;
         right: 20px;
     }
+    .my_name h1 span {
+        font-size: 2rem;
+        font-weight: 800;
+    }
 
     .left_navbaar {
         height: 4rem;
@@ -1022,7 +1025,6 @@ body {
     }
 
     .mainimage {
-        margin-top: 100px;
         left: 5px;
         min-height: 21rem;
     }
@@ -1043,6 +1045,35 @@ body {
         width: 100%;
     }
 
+    #projects h2 {
+        margin-left: -15px;
+        font-size: 2.2rem;
+    }
+    #projects h2::before {
+        top: 3.2rem;
+    }
+    #projects h2::after {
+      top: 3.6rem;
+    }
+    .aboutme_heading h2::before {
+        top: 2.8rem;
+    }
+    .aboutme_heading h2::after {
+  top: 3.2rem;
+    }
+.skilldiv h2::before{
+  top: 3rem;
+}
+.skilldiv h2::after{
+ top: 3.4rem;
+}
+.getintouch h2::before{
+    top: 2.8rem;
+}
+.getintouch h2::after{
+  top: 3.2rem;
+}
+
     .porfolio_img {
         width: 100%;
     }
@@ -1053,12 +1084,14 @@ body {
         height: 13rem;
     }
 
-    .aboutme_heading {
+    .aboutme_heading h2 {
         margin-left: -15px;
+        font-size: 2.2rem;
     }
 
-    .about_me {
+    .about_me h3 {
         margin-left: -15px;
+        font-size: 1.3rem;
     }
 
 
@@ -1068,6 +1101,7 @@ body {
 
     .skilldiv h2 {
         margin-left: -15px;
+        font-size: 2rem;
     }
 
     .tag-list li img {
@@ -1087,13 +1121,21 @@ body {
         margin-left: -15px;
     }
 
+    .getintouch h2 {
+        font-size: 2.2rem;
+    }
+
+    .contacttext h2 {
+        font-size: 1.5rem;
+    }
+
     #form {
         width: 100%;
         margin-left: -40px;
     }
 
     .contectform {
-        min-width: 95%;
+        min-width: 88%;
         margin-left: 78px;
     }
 }
