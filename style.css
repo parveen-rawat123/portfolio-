@@ -441,19 +441,7 @@ body {
     gap: 1.2rem;
 }
 
-.scroller[data-animated="true"] {
-    overflow: hidden;
-    -webkit-mask: linear-gradient(90deg,
-            transparent,
-            white 20%,
-            white 80%,
-            transparent);
-    mask: linear-gradient(90deg,
-            transparent,
-            white 20%,
-            white 80%,
-            transparent);
-}
+
 
 .scroller[data-animated="true"] .scroller_inner {
     width: max-content;
@@ -853,11 +841,11 @@ body {
         position: absolute;
         width: 100%;
         gap: 10px;
-        top: 4rem;
+        top: 4.5rem;
         right: 1px;
         z-index: 2;
         padding: 50px 70px;
-        height: 50%;
+        height: 60%;
         background-color: #9EDDFF;
     }
 
@@ -978,43 +966,135 @@ body {
 
 
 
+@media only screen and (max-width:638px){
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media only screen and (min-width: 481px) and (max-width: 768px)
-/* tablet */
-    {}
-
-
-@media only screen and (min-width: 769px) and (max-width:
-    /* mediam size device */
-    1024px) {}
-
-@media only screen and (min-width: 1025px) {
-    /* desktop    */
-
-
+    .mainimage{
+        padding: 0;
+        margin: 0;
+        left: 30px;
+        min-height: 35rem;
+        min-width: 90%;
+    }
+    
 }
+@media only screen and (max-width:550px){
+    .mainimage{
+        left: 17px;
+        min-height: 32rem;
+    }
+}
+@media only screen and (max-width:480px){
+    .mainimage{
+        left: 20px;
+        min-height: 27rem;
+    }
+}
+@media only screen and (max-width:430px){
+    .mainimage{
+        left: 5px;
+        min-height: 23rem;
+    }
+}
+@media only screen and (max-width:400px){
+    .mainimage{
+        left: 2px;
+        max-height: 1rem;
+    }
+}
+@media only screen and (max-width:360px){
+    .my_name{
+        position: relative;         
+        right: 20px;
+    }  
+    .menu-toggle{
+        position:absolute;         
+        right:20px;
+    }
+
+    .mainimage{
+        left: 5px;
+        min-height: 21rem;
+    }
+    .mainimage::before , .mainimage::after{
+         height: 3rem;
+         width: 3rem;
+    }
+    .maintext{
+        width: 100%;
+        margin-left: -20px;
+    }
+    .portfolio_project{
+     margin-left: -15px;
+     width: 100%;
+    }
+    .porfolio_img{
+       width: 100%;
+    }
+    .porfolio_img  img{
+        width:100%;
+        left: 0px;
+        height: 11rem;
+    }
+    .aboutme_heading{
+        margin-left: -15px;
+    }
+    .about_me{
+        margin-left: -15px;
+    }
+    .aboutpara{
+        margin-left: -15px;
+        text-align: center;
+    }  
+    .personalinfo{
+        gap: 20px;
+    }
+    .skilldiv h2{
+        margin-left: -15px;
+    }
+    
+    .tag-list li img{
+        height: 2.5rem;
+        width: auto;
+    }
+    .scroller_inner{
+        gap:0.5rem;
+    }
+    .scroller{
+        height: 100px;
+    }
+    .getintouch{
+        margin-left: -15px;
+    }
+    #form{
+        width: 100%;
+        margin-left: -40px;
+    }
+  .contectform{
+    min-width: 95%;
+    margin-left: 78px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
