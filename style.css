@@ -779,7 +779,8 @@ body {
         border: none;
         padding: 0;
     }
-    #mainbody{
+
+    #mainbody {
         margin-top: 30px;
     }
 
@@ -881,7 +882,7 @@ body {
         height: 13rem;
         width: 19rem;
     }
-    
+
 }
 
 @media only screen and (max-width:730px) {
@@ -889,7 +890,7 @@ body {
         flex-wrap: wrap;
         gap: 3rem;
     }
-    
+
     .contectform {
         width: 65%;
     }
@@ -900,9 +901,7 @@ body {
     }
 }
 
-@media only screen and (max-width:678px) {
-
-}
+@media only screen and (max-width:678px) {}
 
 @media only screen and (max-width:701px) {
     #projects {
@@ -966,135 +965,134 @@ body {
 
 
 
-@media only screen and (max-width:638px){
+@media only screen and (max-width:638px) {
 
-    .mainimage{
+    .mainimage {
         padding: 0;
         margin: 0;
         left: 30px;
         min-height: 35rem;
         min-width: 90%;
     }
-    
+
 }
-@media only screen and (max-width:550px){
-    .mainimage{
+
+@media only screen and (max-width:550px) {
+    .mainimage {
         left: 17px;
         min-height: 32rem;
     }
 }
-@media only screen and (max-width:480px){
-    .mainimage{
+
+@media only screen and (max-width:480px) {
+    .mainimage {
         left: 20px;
         min-height: 27rem;
     }
 }
-@media only screen and (max-width:430px){
-    .mainimage{
+
+@media only screen and (max-width:430px) {
+    .mainimage {
         left: 5px;
         min-height: 23rem;
     }
 }
-@media only screen and (max-width:400px){
-    .mainimage{
+
+@media only screen and (max-width:400px) {
+    .mainimage {
         left: 2px;
         max-height: 1rem;
     }
 }
-@media only screen and (max-width:360px){
-    .my_name{
-        position: relative;         
+
+@media only screen and (max-width:480px) {
+    .my_name {
+        position: relative;
         right: 20px;
-    }  
-    .menu-toggle{
-        position:absolute;         
-        right:20px;
     }
 
-    .mainimage{
+    .menu-toggle {
+        position: absolute;
+        right: 20px;
+    }
+
+    .mainimage {
+        margin-top: 100px;
         left: 5px;
         min-height: 21rem;
     }
-    .mainimage::before , .mainimage::after{
-         height: 3rem;
-         width: 3rem;
+
+    .mainimage::before,
+    .mainimage::after {
+        height: 3rem;
+        width: 3rem;
     }
-    .maintext{
+
+    .maintext {
         width: 100%;
         margin-left: -20px;
     }
-    .portfolio_project{
-     margin-left: -15px;
-     width: 100%;
+
+    .portfolio_project {
+        margin-left: -15px;
+        width: 100%;
     }
-    .porfolio_img{
-       width: 100%;
+
+    .porfolio_img {
+        width: 100%;
     }
-    .porfolio_img  img{
-        width:100%;
+
+    .porfolio_img img {
+        width: 100%;
         left: 0px;
-        height: 11rem;
+        height: 13rem;
     }
-    .aboutme_heading{
+
+    .aboutme_heading {
         margin-left: -15px;
     }
-    .about_me{
+
+    .about_me {
         margin-left: -15px;
     }
-    .aboutpara{
+
+    .aboutpara {
         margin-left: -15px;
         text-align: center;
-    }  
-    .personalinfo{
+    }
+
+    .personalinfo {
         gap: 20px;
     }
-    .skilldiv h2{
+
+    .skilldiv h2 {
         margin-left: -15px;
     }
-    
-    .tag-list li img{
+
+    .tag-list li img {
         height: 2.5rem;
         width: auto;
     }
-    .scroller_inner{
-        gap:0.5rem;
+
+    .scroller_inner {
+        gap: 0.5rem;
     }
-    .scroller{
+
+    .scroller {
         height: 100px;
     }
-    .getintouch{
+
+    .getintouch {
         margin-left: -15px;
     }
-    #form{
+
+    #form {
         width: 100%;
         margin-left: -40px;
     }
-  .contectform{
-    min-width: 95%;
-    margin-left: 78px;
-  }
+
+    .contectform {
+        min-width: 95%;
+        margin-left: 78px;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
