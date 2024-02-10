@@ -12,7 +12,7 @@ navbarItems.forEach(function (item) {
 
 document.addEventListener('DOMContentLoaded', function () {
    var typed = new Typed(".auto_typed", {
-      strings: ["HTML", "Css", "JavaScript", "Bootstrap"],
+      strings: ["Full stack", "Devloper"],
       typeSpeed: 150,
       backSpeed: 50,
       loop: true
@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 document.addEventListener('DOMContentLoaded', function () {
    var typed = new Typed(".auto_typed2", {
-      strings: ["WebDevloper", "HTML", "Css", "JavaScript", "Bootstrap"],
+      strings: ["HTML5", "Css", "JavaScript", "Bootstrap","Nodejs","Expressjs","MySql","MongoDb","React","git","github","tailwaindCSS"],
       typeSpeed: 150,
       backSpeed: 50,
       loop: true
