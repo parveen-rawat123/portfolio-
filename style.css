@@ -1014,7 +1014,9 @@ body {
     .left_navbaar {
         height: 4rem;
     }
-
+    .mainto{
+    width: 20rem;
+   }
     .nav_item {
         background-color: #ec1839;
     }
@@ -1093,7 +1095,9 @@ body {
         margin-left: -15px;
         font-size: 1.3rem;
     }
-
+    .aboutpara{
+        margin-left: -15px;
+    }
 
     .personalinfo {
         gap: 20px;
@@ -1137,5 +1141,8 @@ body {
     .contectform {
         min-width: 88%;
         margin-left: 78px;
+    }
+    .footericon {
+        font-size: 28px;
     }
 }
