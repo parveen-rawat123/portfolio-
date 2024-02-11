@@ -13,7 +13,6 @@ body {
 }
 
 /* navbaar css */
-
 .container {
     display: flex;
     height: 100vh;
@@ -132,6 +131,7 @@ body {
     width: 55%;
     scroll-behavior: smooth;
     flex-shrink: 2;
+   
 }
 
 .maintext h3 {
@@ -190,6 +190,7 @@ body {
     margin-left: 3rem;
     margin-top: 2rem;
     animation: imageanni 2.4s infinite ease-in-out;
+   
 }
 
 @keyframes imageanni {
@@ -210,7 +211,6 @@ body {
 .mainimage img {
     height: auto;
     max-width: 80%;
-    /* width: 14rem; */
     border-radius: 0.5rem;
     object-fit: cover;
     box-shadow: white 0px 0px 12px, red 0px 0px 12px;
@@ -980,7 +980,7 @@ body {
 
 @media only screen and (max-width:480px) {
     #mainbody{
-        gap: 2rem;
+        margin-left: 0;
     }
     .my_name {
         position: relative;
@@ -1007,8 +1007,8 @@ body {
     }
 
     .mainimage {
-        left: 5px;
-        min-height: 24rem;
+        left: 35px;
+        min-height: 10rem;
         }
 
     .mainimage::before,
@@ -1018,7 +1018,8 @@ body {
 
     .maintext {
         width: 100%;
-        margin-left: -20px;
+        margin-left: 20px;
+       max-height: 30rem;
     }
 
     .portfolio_project {
@@ -1137,22 +1138,4 @@ body {
     .footericon {
         font-size: 28px;
     }
-}
-@media only screen and (max-width:400px){
-    .mainimage {
-        left: 5px;
-        min-height: 21rem;
-        }
-        #mainbody{
-            gap: 4rem;
-        }
-}
-@media only screen and (max-width:350px){
-    .mainimage {
-        left: 5px;
-        min-height: 18rem;
-        }
-        #mainbody{
-            gap: 5rem;
-        }
 }

@@ -29,17 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // for responsive navbaaar
 
-// document.getElementById('mobile-menu').addEventListener('click', function () {
-//    let navbar = document.querySelector('.nav_item');
-//    let li = document.querySelectorAll('.the ul li')
-//    if (navbar.style.display === 'block') {
-//       navbar.style.display = 'none';
-
-//    } else {
-//       navbar.style.display = 'block';
-//    }
-// });
-
  let menubar = document.getElementById('mobile-menu')
  menubar.addEventListener("click",()=>{
    let navbar = document.querySelector('.nav_item');
@@ -92,7 +81,6 @@ function addAnimation() {
       });
    });
 };
-
 
 //form validation
 let form = document.querySelector('.myform');
