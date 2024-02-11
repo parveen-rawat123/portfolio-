@@ -841,24 +841,26 @@ body {
         position: absolute;
         width: 100%;
         gap: 10px;
-        top: 4.5rem;
+        top: 4rem;
         right: 1px;
         z-index: 2;
         padding: 50px 70px;
         height: 60%;
         background-color: #9EDDFF;
     }
-
-    .contectform {
-        width: 46%;
+    .nav_item {
+        display: none;
     }
-
     .menu-toggle {
         display: block;
         cursor: pointer;
         position: absolute;
         right: 50px;
         z-index: 2;
+    }
+
+    .contectform {
+        width: 46%;
     }
 
     .menu-toggle span {
@@ -900,7 +902,7 @@ body {
     }
 }
 
-@media only screen and (max-width:678px) {}
+
 
 @media only screen and (max-width:701px) {
     #projects {
@@ -977,29 +979,8 @@ body {
 }
 
 @media only screen and (max-width:480px) {
-    .mainimage {
-        left: 20px;
-        min-height: 27rem;
-    }
-}
-
-@media only screen and (max-width:430px) {
-    .mainimage {
-        left: 5px;
-        min-height: 23rem;
-    }
-}
-
-@media only screen and (max-width:400px) {
-    .mainimage {
-        left: 2px;
-        max-height: 1rem;
-    }
-}
-
-@media only screen and (max-width:480px) {
     #mainbody{
-        gap: 4.5rem;
+        gap: 2rem;
     }
     .my_name {
         position: relative;
@@ -1032,8 +1013,7 @@ body {
 
     .mainimage::before,
     .mainimage::after {
-        height: 3rem;
-        width: 3rem;
+        display: none;
     }
 
     .maintext {
@@ -1087,8 +1067,7 @@ body {
         width: 100%;
     }
     .personal_information{
-        margin-left: -20px;
-        text-align: center;
+        margin-left: -5px;
     }
 
     .porfolio_img img {
@@ -1165,7 +1144,7 @@ body {
         min-height: 21rem;
         }
         #mainbody{
-            gap: 7rem;
+            gap: 4rem;
         }
 }
 @media only screen and (max-width:350px){
@@ -1174,6 +1153,6 @@ body {
         min-height: 18rem;
         }
         #mainbody{
-            gap: 8rem;
+            gap: 5rem;
         }
 }
