@@ -955,12 +955,8 @@ body {
     .mainimage {
         max-height: 40rem;
         max-width: 60%;
-        margin: auto;
     }
-
 }
-
-
 
 @media only screen and (max-width:638px) {
 
@@ -1002,10 +998,14 @@ body {
 }
 
 @media only screen and (max-width:480px) {
+    #mainbody{
+        gap: 4.5rem;
+    }
     .my_name {
         position: relative;
         right: 20px;
     }
+
     .my_name h1 span {
         font-size: 2rem;
         font-weight: 800;
@@ -1014,12 +1014,11 @@ body {
     .left_navbaar {
         height: 4rem;
     }
-    .mainto{
-    width: 20rem;
-   }
-    .nav_item {
-        background-color: #ec1839;
+
+    .mainto {
+        width: 20rem;
     }
+
 
     .menu-toggle {
         position: absolute;
@@ -1028,8 +1027,8 @@ body {
 
     .mainimage {
         left: 5px;
-        min-height: 21rem;
-    }
+        min-height: 24rem;
+        }
 
     .mainimage::before,
     .mainimage::after {
@@ -1051,33 +1050,45 @@ body {
         margin-left: -15px;
         font-size: 2.2rem;
     }
+
     #projects h2::before {
         top: 3.2rem;
     }
+
     #projects h2::after {
-      top: 3.6rem;
+        top: 3.6rem;
     }
+
     .aboutme_heading h2::before {
         top: 2.8rem;
     }
+
     .aboutme_heading h2::after {
-  top: 3.2rem;
+        top: 3.2rem;
     }
-.skilldiv h2::before{
-  top: 3rem;
-}
-.skilldiv h2::after{
- top: 3.4rem;
-}
-.getintouch h2::before{
-    top: 2.8rem;
-}
-.getintouch h2::after{
-  top: 3.2rem;
-}
+
+    .skilldiv h2::before {
+        top: 3rem;
+    }
+
+    .skilldiv h2::after {
+        top: 3.4rem;
+    }
+
+    .getintouch h2::before {
+        top: 2.8rem;
+    }
+
+    .getintouch h2::after {
+        top: 3.2rem;
+    }
 
     .porfolio_img {
         width: 100%;
+    }
+    .personal_information{
+        margin-left: -20px;
+        text-align: center;
     }
 
     .porfolio_img img {
@@ -1095,7 +1106,8 @@ body {
         margin-left: -15px;
         font-size: 1.3rem;
     }
-    .aboutpara{
+
+    .aboutpara {
         margin-left: -15px;
     }
 
@@ -1142,7 +1154,26 @@ body {
         min-width: 88%;
         margin-left: 78px;
     }
+
     .footericon {
         font-size: 28px;
     }
+}
+@media only screen and (max-width:400px){
+    .mainimage {
+        left: 5px;
+        min-height: 21rem;
+        }
+        #mainbody{
+            gap: 7rem;
+        }
+}
+@media only screen and (max-width:350px){
+    .mainimage {
+        left: 5px;
+        min-height: 18rem;
+        }
+        #mainbody{
+            gap: 8rem;
+        }
 }
