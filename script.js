@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
 // for responsive navbaaar
 
  let menubar = document.getElementById('mobile-menu')
+ let navbar = document.querySelector('.nav_item');
  menubar.addEventListener("click",()=>{
-   let navbar = document.querySelector('.nav_item');
    if (navbar.style.display === 'none'){
       navbar.style.display = 'block';
    }
@@ -39,10 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
       navbar.style.display = 'none';
    }
 })
-
-
-
-
 
 
 
@@ -157,3 +153,18 @@ form.addEventListener('submit', (event) => {
    }
    alert("thank you for your meessage")
 });
+
+/// click li tag 
+let li = document.querySelectorAll(".the_li");
+function toggleNavbarDisplay() {
+   if (navbar.style.display === 'block') {
+       navbar.style.display = 'none';
+   } else {
+       navbar.style.display = 'block';
+   }
+}
+if (window.matchMedia("(max-width: 768px)").matches) {
+   li.forEach(element => {
+       element.addEventListener("click", toggleNavbarDisplay);
+   });
+}
