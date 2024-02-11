@@ -833,7 +833,6 @@ body {
 }
 
 @media only screen and (max-width:768px) {
-    
     .nav_item ul {
         display: flex;
         flex-direction: column;
@@ -980,9 +979,9 @@ body {
 }
 
 @media only screen and (max-width:480px) {
-    #mainbody{
-        margin-left: 0;
-    }
+    /* #mainbody{
+        margin-left:1px;
+    } */
     .my_name {
         position: relative;
         right: 20px;
@@ -1006,7 +1005,7 @@ body {
     }
 
     .mainimage {
-        left: 35px;
+        margin-left: -25px;
         min-height: 10rem;
         }
 
@@ -1017,7 +1016,7 @@ body {
 
     .maintext {
         width: 100%;
-        margin-left: 4px;
+        margin-left:-23px;
        max-height: 30rem;
     }
 
@@ -1092,6 +1091,7 @@ body {
 
     .personalinfo {
         gap: 20px;
+        margin-left: -17px;
     }
 
     .skilldiv h2 {
