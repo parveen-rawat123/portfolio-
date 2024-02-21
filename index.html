@@ -1,247 +1,321 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="refresh" content="10"> -->
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" href="fav2.jpeg" type="image/x-icon" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- <meta http-equiv="refresh" content="10"> -->
-  <title>portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="shortcut icon" href="fav2.jpeg" type="image/x-icon">
-  <script src="https://unpkg.com/scrollreveal"></script>
-</head>
+  <body>
+    <!-- left side navbaar html  -->
+    <div class="container">
+      <div class="left_navbaar">
+        <div class="my_name">
+          <h1><span>P</span>raveen</h1>
+        </div>
+        <div class="nav_item">
+          <ul class="the_ul">
+            <li class="the_li">
+              <a href="#mainbody"> <i class="fa-solid fa-house"> </i> Home </a>
+            </li>
+            <li class="the_li">
+              <a href="#projects"
+                ><i class="fa-sharp fa-solid fa-diagram-project"></i>Project</a
+              >
+            </li>
+            <li class="the_li">
+              <a href="#aboutme_section"
+                ><i class="fa-solid fa-user"></i>About</a
+              >
+            </li>
+            <li class="the_li">
+              <a href="#form"><i class="fa-solid fa-comment"></i>Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
 
-<body>
-  <!-- left side navbaar html  -->
-  <div class="container">
-    <div class="left_navbaar">
-      <div class="my_name">
-        <h1><span>P</span>raveen</h1>
-      </div>
-      <div class="nav_item">
-        <ul class="the_ul">
-          <li class="the_li">
-            <a href="#mainbody">
-              <i class="fa-solid fa-house"> </i> Home </a>
-          </li>
-          <li class="the_li"> <a href="#projects"><i class="fa-sharp fa-solid fa-diagram-project"></i>Project</a></li>
-          <li class="the_li"> <a href="#aboutme_section"><i class="fa-solid fa-user"></i>About</a></li>
-          <li class="the_li"><a href="#form"><i class="fa-solid fa-comment"></i>Contact</a></li>
-        </ul>
-      </div>
-      <div class="menu-toggle" id="mobile-menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <!-- main profile html -->
-    <div class="main">
-      <!-- home section  html -->
-      <div id="mainbody" class="anime">
-        <div class="maintext">
-          <h3>Hello,My name is <span>Praveen</span></h3>
-          <h3>I'm a <span class="auto_typed" style="font-size:1.9rem" ;></span></h3>
-          <p>Hello, and welcome to my portfolio! I'm Praveen Singh, a passionate full-stack developer with one years of experience in the industry. I specialize in creating dynamic and user-friendly web applications, with proficiency in both frontend and backend technologies.
-          </p>
-          <a href="mailto:rawatpraveen477@gmail.com">Hire me</a>
-        </div>
-        <div class="mainimage">
-          <img src="./image/porfolioimg.jpg">
-        </div>
-      </div>
-      <!-- project html start here -->
-      <div id="projects" class="anime">
-        <h2> Project </h2>
-        <div class="portfolio_project">
-          <div class="porfolio_img" >
-            <img src="./image/finalimage.jpg">
+      <!-- main profile html -->
+      <div class="main">
+        <!-- home section  html -->
+        <div id="mainbody" class="anime">
+          <div class="maintext">
+            <h3>Hello,My name is <span>Praveen</span></h3>
+            <h3>
+              I'm a <span class="auto_typed" style="font-size: 1.9rem" ;></span>
+            </h3>
+            <p>
+              Hello, and welcome to my portfolio! I'm Praveen Singh, a
+              passionate full-stack developer with one years of experience in
+              the industry. I specialize in creating dynamic and user-friendly
+              web applications, with proficiency in both frontend and backend
+              technologies.
+            </p>
+            <a href="mailto:rawatpraveen477@gmail.com">Hire me</a>
           </div>
-          <div class="portfolio_about">
-            <h3>Portfolio</h3>
-            <p>Explore my portfolio website to discover a curated collection of my creative work, showcasing my skills
-              in design, development, and more.</p>
-            <div class="portfolio_a">
-              <a href="">Github <i class="fa-brands fa-github"></i></a>
-              <a href="">Live <i class="fa-solid fa-link"></i></a>
-            </div>
+          <div class="mainimage">
+            <img src="./image/porfolioimg.jpg" />
           </div>
         </div>
-        <div class="portfolio_project">
-          <div class="porfolio_img">
-            <img src="./image/webapp.jpg">
-          </div>
-          <div class="portfolio_about">
-            <h3>Spotify Web</h3>
-            <p> I created a Spotify web clone using HTML, CSS, and JavaScript The project showcases my frontend development skills and  I'm dedicated to crafting a flawless user experience.</p>
-            <div class="portfolio_a">
-              <a href="https://github.com/parveen-rawat123/spotify_web">Github <i class="fa-brands fa-github"></i></a>
-              <a href="https://parveen-rawat123.github.io/spotify_web/">Live <i class="fa-solid fa-link"></i></a>
+        <!-- project html start here -->
+        <div id="projects" class="anime">
+          <h2>Project</h2>
+          <div class="portfolio_project">
+            <div class="porfolio_img">
+              <img src="./image/finalimage.jpg" />
             </div>
-          </div>
-        </div>
-        <div class="portfolio_project">
-          <div class="porfolio_img">
-            <img src="./image/primium.jpg">
-          </div>
-          <div class="portfolio_about">
-            <h3>Spotify Primium</h3>
-            <p> I created a Spotify primium clone using HTML, CSS, and JavaScript The project showcases my frontend development skills and  I'm dedicated to crafting a flawless user experience.</p>
-            <div class="portfolio_a">
-              <a href="https://github.com/parveen-rawat123/spotify_primium">Github <i class="fa-brands fa-github"></i></a>
-              <a href="">Live <i class="fa-solid fa-link"></i></a>
-            </div>
-          </div>
-        </div>
-        <!-- write project section on there  -->
-      </div>
-      <div id="aboutme_section" class="anime">
-        <div class="aboutme_heading">
-          <h2>About <span> me </span></h2>
-        </div>
-        <div class="about_me">
-          <h3>I'm Praveen Rawat and, my keyskill : <br> <span class="auto_typed2" style="color: red;">
-            </span> </h3>
-        </div>
-        <div class="aboutpara">
-          <p>Hi,i'm praveen rawat from chamoli garhwal . I am a web developer. I complete my bechlore in art from DELHI
-            UNIVERSITY. and i have complete numerous intermediate-levle project . Additionally, I am a competitive
-            programmer with experience in algorithmic problem-solving. </p>
-        </div>
-      </div>
-      <div class="mydetails">
-        <div class="personal_information">
-          <div class="personalinfo one">
-            <div class="info">
-              <p> Name : </p>
-              <p> Praveen Rawat </p>
-            </div>
-            <div class="info">
-              <p>Phone: </p>
-              <p> +6398928159</p>
-            </div>
-            <div class="info">
-              <p> Email: </p>
-              <p>rawatpraveen477@gmail.com</p>
-            </div>
-          </div>
-          <div class="personalinfo two">
-            <div class="info">
-              <p>Role: </p>
-              <p> FullStack Dev</p>
-            </div>
-            <div class="info">
-              <p>Brithday: </p>
-              <p> 10-Sep-2001</p>
-            </div>
-            <div class="info">
-              <p>City: </p>
-              <p> Dehradun(UTTARAKHAND)</p>
-            </div>
-          </div>
-        </div>
-        <div class="skilldiv">
-          <h2> My skills </h2>
-          <div class="keyskill">
-            <div class="scroller" data-direction="left">
-              <ul class="tag-list scroller_inner">
-                <li><img src="./image/html.png.png" ></li>
-                <li> <img src="./image/css.png.png" alt=""></li>
-                <li> <img src="./image/js.png.png" alt=""></li>
-                <li><img src="./image/bootstrap-logo-shadow.png" alt=""></li>
-                <li><img src="./image/react.png.png" alt=""></li>
-                <li><img src="./image/tailwind-css-icon.webp" style="height: 2rem;"></li>
-              </ul>
-            </div>
-            <div class="scroller" data-direction="right">
-              <ul class="tag-list scroller_inner">
-                <li><img src="./image/github.png.png" alt=""></li>
-                <li><img src="./image/gitlogo.png" alt=""></li>
-                <li><img src="./image/mongodp.png.png" alt=""></li>
-                <li><img src="./image/sql.png.png" alt=""></li>
-                <li><img src="./image/expressjs.png.png" alt=""></li>
-                <li><img src="./image/nodejs.png.png" alt=""></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-      <div class="getintouch">
-        <h2>Get in <span>Touch</span></h2>
-      </div>
-      <!-- form html  -->
-      <div id="form" class="anime">
-        <div class="contacttext">
-          <h2>Let's chat.
-            <br>
-            tell me about your <br> project
-          </h2>
-          <p style="padding-top: 20px;">Let's create somthing togther✌️ </p>
-          <div>
-            <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rawatpraveen477@gmail.com" target="_blank">
-            <div class="mainto">
-              <div class="mailicon">
-                <i class="fa-regular fa-envelope"></i>
-              </div>
-              <div class="mailtext">
-                <p>mail me at</p>
-           <p>  
-             rawatpraveen477@gmail.com
-           </p>
+            <div class="portfolio_about">
+              <h3>Portfolio</h3>
+              <p>
+                Explore my portfolio website to discover a curated collection of
+                my creative work, showcasing my skills in design, development,
+                and more.
+              </p>
+              <div class="portfolio_a">
+                <a href="">Github <i class="fa-brands fa-github"></i></a>
+                <a href="">Live <i class="fa-solid fa-link"></i></a>
               </div>
             </div>
-          </a>
+          </div>
+          <div class="portfolio_project">
+            <div class="porfolio_img">
+              <img src="./image/webapp.jpg" />
+            </div>
+            <div class="portfolio_about">
+              <h3>Spotify Web</h3>
+              <p>
+                I created a Spotify web clone using HTML, CSS, and JavaScript
+                The project showcases my frontend development skills and I'm
+                dedicated to crafting a flawless user experience.
+              </p>
+              <div class="portfolio_a">
+                <a href="https://github.com/parveen-rawat123/spotify_web"
+                  >Github <i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://parveen-rawat123.github.io/spotify_web/"
+                  >Live <i class="fa-solid fa-link"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="portfolio_project">
+            <div class="porfolio_img">
+              <img src="./image/primium.jpg" />
+            </div>
+            <div class="portfolio_about">
+              <h3>Spotify Primium</h3>
+              <p>
+                I created a Spotify primium clone using HTML, CSS, and
+                JavaScript The project showcases my frontend development skills
+                and I'm dedicated to crafting a flawless user experience.
+              </p>
+              <div class="portfolio_a">
+                <a href="https://github.com/parveen-rawat123/spotify_primium"
+                  >Github <i class="fa-brands fa-github"></i
+                ></a>
+                <a href="">Live <i class="fa-solid fa-link"></i></a>
+              </div>
+            </div>
+          </div>
+          <!-- write project section on there  -->
+        </div>
+        <div id="aboutme_section" class="anime">
+          <div class="aboutme_heading">
+            <h2>About <span> me </span></h2>
+          </div>
+          <div class="about_me">
+            <h3>
+              I'm Praveen Rawat and, my keyskill : <br />
+              <span class="auto_typed2" style="color: red"> </span>
+            </h3>
+          </div>
+          <div class="aboutpara">
+            <p>
+              Hi,i'm praveen rawat from chamoli garhwal . I am a web developer.
+              I complete my bechlore in art from DELHI UNIVERSITY. and i have
+              complete numerous intermediate-levle project . Additionally, I am
+              a competitive programmer with experience in algorithmic
+              problem-solving.
+            </p>
           </div>
         </div>
+        <div class="mydetails">
+          <div class="personal_information">
+            <div class="personalinfo one">
+              <div class="info">
+                <p>Name :</p>
+                <p>Praveen Rawat</p>
+              </div>
+              <div class="info">
+                <p>Phone:</p>
+                <p>+6398928159</p>
+              </div>
+              <div class="info">
+                <p>Email:</p>
+                <p>rawatpraveen477@gmail.com</p>
+              </div>
+            </div>
+            <div class="personalinfo two">
+              <div class="info">
+                <p>Role:</p>
+                <p>FullStack Dev</p>
+              </div>
+              <div class="info">
+                <p>Brithday:</p>
+                <p>10-Sep-2001</p>
+              </div>
+              <div class="info">
+                <p>City:</p>
+                <p>Dehradun(UTTARAKHAND)</p>
+              </div>
+            </div>
+          </div>
+          <div class="skilldiv">
+            <h2>My skills</h2>
+            <div class="keyskill">
+              <div class="scroller" data-direction="left">
+                <ul class="tag-list scroller_inner">
+                  <li><img src="./image/html.png.png" /></li>
+                  <li><img src="./image/css.png.png" alt="" /></li>
+                  <li><img src="./image/js.png.png" alt="" /></li>
+                  <li>
+                    <img src="./image/bootstrap-logo-shadow.png" alt="" />
+                  </li>
+                  <li><img src="./image/react.png.png" alt="" /></li>
+                  <li>
+                    <img
+                      src="./image/tailwind-css-icon.webp"
+                      style="height: 2rem"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div class="scroller" data-direction="right">
+                <ul class="tag-list scroller_inner">
+                  <li><img src="./image/github.png.png" alt="" /></li>
+                  <li><img src="./image/gitlogo.png" alt="" /></li>
+                  <li><img src="./image/mongodp.png.png" alt="" /></li>
+                  <li><img src="./image/sql.png.png" alt="" /></li>
+                  <li><img src="./image/expressjs.png.png" alt="" /></li>
+                  <li><img src="./image/nodejs.png.png" alt="" /></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="getintouch">
+          <h2>Get in <span>Touch</span></h2>
+        </div>
+        <!-- form html  -->
+        <div id="form" class="anime">
+          <div class="contacttext">
+            <h2>
+              Let's chat.
+              <br />
+              tell me about your <br />
+              project
+            </h2>
+            <p style="padding-top: 20px">Let's create somthing togther✌️</p>
+            <div>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=rawatpraveen477@gmail.com"
+                target="_blank"
+              >
+                <div class="mainto">
+                  <div class="mailicon">
+                    <i class="fa-regular fa-envelope"></i>
+                  </div>
+                  <div class="mailtext">
+                    <p>mail me at</p>
+                    <p>rawatpraveen477@gmail.com</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
 
-        <div class="contectform">
-          <h3> Send us a massage 🚀</h3>
-          <form action="" name="myform" class="myform">
-            <input type="text" placeholder="Full name*" name="name"/>
-            <span id="error1">*</span> 
-            <input type="email" placeholder="Email address*" name="email" />
-            <span id="error2">*</span> 
-            <input type="number" placeholder="Contact Number*" name="number"/> 
-            <span id="error3">*</span> 
-            <textarea placeholder="text here"  cols="30" rows="6"></textarea> <br>
-            <button type="submit"> Send message</button>
-          </form>
+          <div class="contectform">
+            <h3>Send us a massage 🚀</h3>
+            <form
+              action="https://formsubmit.co/rawatpraveen477@gmail.com"
+              method="POST"
+              name="myform"
+              class="myform"
+            >
+              <input type="text" placeholder="Full name*" name="name" />
+              <span id="error1">*</span>
+              <input type="email" placeholder="Email address*" name="email" />
+              <span id="error2">*</span>
+              <input
+                type="number"
+                placeholder="Contact Number*"
+                name="number"
+              />
+              <span id="error3">*</span>
+              <textarea
+                placeholder="text here"
+                cols="30"
+                rows="6"
+                name="message"
+              ></textarea>
+              <br />
+              <button type="submit">Send message</button>
+            </form>
+          </div>
         </div>
+        <footer>
+          <div class="footer">
+            <div class="footericon">
+              <a
+                href="https://www.instagram.com/praveen_rawat477?igsh=YzljYTk1ODg3Zg=="
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/praveen-singh-8902a4265"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/parveen-rawat123"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://twitter.com/princeR74930066"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </div>
+            <div class="copyright">
+              <p>Copyright &copy; 2024</p>
+              <p>PRAVEEN RAWAT</p>
+            </div>
+          </div>
+        </footer>
+        <!-- this is the main div end -->
       </div>
-      <footer>
-        <div class="footer">
-          <div class="footericon">
-            <a href="https://www.instagram.com/praveen_rawat477?igsh=YzljYTk1ODg3Zg=="><i
-                class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/praveen-singh-8902a4265"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/parveen-rawat123"><i class="fa-brands fa-github"></i></a>
-            <a href="https://twitter.com/princeR74930066"><i class="fa-brands fa-twitter"></i></a>
-          </div>
-          <div class="copyright">
-            <p>Copyright &copy; 2024</p>
-            <p>PRAVEEN RAWAT</p>
-          </div>
-        </div>
-      </footer>
-      <!-- this is the main div end -->
     </div>
-  </div>
-  <script src="script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
-  <script>
-    ScrollReveal({
-       reset: true,
-       distance : '60px',
-       duration :2500,
-       delay : 400
-        });
-      
-        ScrollReveal().reveal('#mainbody', { 
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal("#mainbody", {
         delay: 300,
-        origin : 'left' 
-        });
-</script>
-</body>
+        origin: "left",
+      });
+    </script>
+  </body>
 </html>
