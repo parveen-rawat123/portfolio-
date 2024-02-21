@@ -104,12 +104,14 @@ form.addEventListener("submit", (event) => {
   if (name.trim() === "") {
     error1.innerText = "*enter your name*";
     error1.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
   if (name.length < 3 || name.length >= 20) {
     error1.innerText = "*enter your full name*";
     error1.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
@@ -117,12 +119,14 @@ form.addEventListener("submit", (event) => {
   if (email.trim() === "") {
     error2.innerText = "*enter your email*";
     error2.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
   if (email.indexOf("@") <= 0) {
     error2.innerText = " *@ invalid position*";
     error2.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
@@ -132,6 +136,7 @@ form.addEventListener("submit", (event) => {
   ) {
     error2.innerText = " *invalid position*";
     error2.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
@@ -139,24 +144,28 @@ form.addEventListener("submit", (event) => {
   if (number.trim() === "" || number === null) {
     error3.innerText = "*please enter your number*";
     error3.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
   if (number.length !== 10) {
     error3.innerText = "*number must be 10 digits*";
     error3.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
   if (isNaN(number)) {
     error3.innerText = "*enter numeric value*";
     error3.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 
   if (!["9", "8", "7", "6"].includes(number.charAt(0))) {
     error3.innerText = "* enter Indian mobile number*";
     error3.style.opacity = 1;
+    event.preventDefault();
     return;
   }
 });
