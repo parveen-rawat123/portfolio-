@@ -78,6 +78,7 @@ body {
     rgb(157, 23, 180)
   );
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   -webkit-animation: anime 20s linear infinite;
           animation: anime 20s linear infinite;
   background-size: 300%;
@@ -214,6 +215,7 @@ body {
     rgb(157, 23, 180)
   );
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   -webkit-animation: anime 20s linear infinite;
           animation: anime 20s linear infinite;
   background-size: 300%;
