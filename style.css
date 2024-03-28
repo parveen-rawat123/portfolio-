@@ -320,32 +320,6 @@ body {
           filter: brightness(80%) contrast(105%) grayscale(20%);
 }
 
-.mainimage::before {
-  content: "";
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  border-top: 8px solid #ec1839;
-  border-left: 8px solid #ec1839;
-  z-index: -1;
-  top: -5px;
-  left: -7px;
-}
-
-.mainimage::after {
-  content: "";
-  position: absolute;
-  width: 4rem;
-  height: 4rem;
-  border-bottom: 8px solid #ec1839;
-  border-right: 8px solid #ec1839;
-  bottom: -9px;
-  z-index: -1;
-  right: 0.01rem;
-  bottom: 2px;
-  bottom: -8px;
-}
-
 /* project css start here  */
 #projects {
   width: 95%;
@@ -1205,11 +1179,8 @@ body {
         /* -ms-flex-direction: column; */
   }
 
-  .mainimage::before,
-  .mainimage::after {
-    display: none;
-  }
-
+  
+  
   .maintext {
     width: 100%;
   }
