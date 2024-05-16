@@ -11,7 +11,7 @@ navbarItems.forEach(function (item) {
 
 document.addEventListener("DOMContentLoaded", function () {
   var typed = new Typed(".auto_typed", {
-    strings: ["Full stack", "Devloper"],
+    strings: ["Full stack", "Developer"],
     typeSpeed: 150,
     backSpeed: 50,
     loop: true,
