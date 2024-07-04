@@ -222,7 +222,7 @@ body {
 }
 
 .maintext a {
-  padding: 0.8rem 2rem;
+  padding: 0.6rem 1.8rem;
   text-decoration: none;
   border-radius: 0.6rem;
   border: transparent;
@@ -1371,7 +1371,7 @@ body {
 
   .contectform {
     min-width: 88%;
-    margin-left: 78px;
+    margin-left: 60px;
   }
 
   .footericon {
